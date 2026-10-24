@@ -1,6 +1,6 @@
 # Durable-Prefix Write-Outcome Oracles: artifact
 
-Scripts and result files for the paper *Durable-Prefix Write-Outcome Oracles for Mixed Deterministic/OCC Transaction Engines*.
+Scripts and result files for the paper *Durable-Prefix Write-Outcome Oracles for Hybrid Deterministic and Optimistic Transaction Engines*.
 
 Everything here is a Python prototype written for the paper. It is not a storage engine and contains no third-party engine. See "Scope and limits" before drawing conclusions from it.
 
