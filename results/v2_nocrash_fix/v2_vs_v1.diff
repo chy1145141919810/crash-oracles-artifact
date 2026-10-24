@@ -1,0 +1,62 @@
+--- experiments/scripts/real_recovery_prototype.py	2026-10-07 19:09:53.669542000 +1100
++++ experiments/scripts/real_recovery_prototype_v2.py	2026-10-07 19:13:34.922551000 +1100
+@@ -356,8 +356,15 @@
+     return "match" if canon(ref) == canon(d_rec) else "mismatch"
+ 
+ def crash_no_crash_diff_check(eng, crash, d_rec):
+-    """Baseline: compare recovered state to the FULL no-crash execution (all txns).
+-    Wrong reference for a crash (includes excluded txns) -> systematic false alarms."""
++    """Baseline: compare recovered state to the engine's TRUE no-crash final state
++    (committed txns only, in true commit order). Still the wrong reference after a crash
++    cut (includes the non-durable suffix), but exact for a no-crash clean run."""
++    ref = eng["final_committed_state"]
++    return "match" if canon(ref) == canon(d_rec) else "mismatch"
++
++def crash_no_crash_diff_legacy_check(eng, crash, d_rec):
++    """v1 baseline kept for side-by-side reporting: reference applies ALL generated txns
++    (including aborted occ) in arrival order."""
+     ref = eng["no_crash_full_state"]
+     return "match" if canon(ref) == canon(d_rec) else "mismatch"
+ 
+@@ -441,8 +448,10 @@
+         print(json.dumps({"error": "datasets unavailable", "have": list(datasets)}))
+         return 1
+ 
+-    checkers = ["oracle", "single_log_replay", "history_acceptor", "crash_no_crash_diff"]
++    checkers = ["oracle", "single_log_replay", "history_acceptor", "crash_no_crash_diff",
++                "crash_no_crash_diff_legacy"]
+     runs = []
++    nocrash_clean = {"n": 0, "fixed_match": 0, "legacy_match": 0}
+     timing = {"oracle_s": [], "recovery_s": []}
+     for dom, records in datasets.items():
+         for seed in range(args.seeds):
+@@ -480,10 +489,18 @@
+                                         pred = single_log_replay_check(eng, crash, d_rec)
+                                     elif ch == "history_acceptor":
+                                         pred = history_check(eng, crash, d_rec)
+-                                    else:
++                                    elif ch == "crash_no_crash_diff":
+                                         pred = crash_no_crash_diff_check(eng, crash, d_rec)
++                                    else:
++                                        pred = crash_no_crash_diff_legacy_check(eng, crash, d_rec)
+                                     row[ch + "_pred"] = pred
+                                     row[ch + "_outcome"] = score(pred, buggy)
++                                # sanity: no crash cut + clean recovery must match the fixed reference
++                                if drop_last == 0 and fault == "clean":
++                                    assert row["crash_no_crash_diff_pred"] == "match", row
++                                    nocrash_clean["n"] += 1
++                                    nocrash_clean["fixed_match"] += 1
++                                    nocrash_clean["legacy_match"] += int(row["crash_no_crash_diff_legacy_pred"] == "match")
+                                 timing["recovery_s"].append(rec_s)
+                                 runs.append(row)
+ 
+@@ -502,7 +519,8 @@
+     full = [r for r in runs if r["hide_frontier"] == 0]
+     degraded = [r for r in runs if r["hide_frontier"] == 1]
+     metrics = {"n_runs": len(runs), "n_full_adapter": len(full), "n_degraded_adapter": len(degraded),
+-               "datasets": {k: len(v) for k, v in datasets.items()}, "checkers": {}}
++               "datasets": {k: len(v) for k, v in datasets.items()}, "checkers": {},
++               "no_crash_clean_sanity": nocrash_clean}
+     for ch in checkers:
+         rec, nb = rate(full, ch, "recall")
+         fb, nc = rate(full, ch, "false_bug")

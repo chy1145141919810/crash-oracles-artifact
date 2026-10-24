@@ -1,0 +1,1419 @@
+{
+  "by_crash_stratum": {
+    "checkpoint_truncation": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 1.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.98989898989899,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 6,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 594,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.4276094276094276,
+        "false_report_equivalent": 0.09289617486338798,
+        "missed_non_equivalent": 340,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 366,
+      "n_non_equivalent": 594,
+      "oracle": {
+        "coverage_non_equivalent": 0.9444444444444444,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.06557377049180328,
+        "uncertain_non_equivalent": 0.05555555555555555
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.48633879781420764,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 594,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "checkpoint_write": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5075593952483801,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.6740442655935613,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 162,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 497,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.7987927565392354,
+        "false_report_equivalent": 0.38660907127429806,
+        "missed_non_equivalent": 100,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 463,
+      "n_non_equivalent": 497,
+      "oracle": {
+        "coverage_non_equivalent": 0.903420523138833,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.14254859611231102,
+        "uncertain_non_equivalent": 0.096579476861167
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5075593952483801,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 497,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "commit_marker": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5382513661202186,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.7087542087542088,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 173,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 594,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.82996632996633,
+        "false_report_equivalent": 0.226775956284153,
+        "missed_non_equivalent": 101,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 366,
+      "n_non_equivalent": 594,
+      "oracle": {
+        "coverage_non_equivalent": 0.8905723905723906,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.14207650273224043,
+        "uncertain_non_equivalent": 0.10942760942760943
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5382513661202186,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 594,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "redo_append": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5303030303030303,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.6726907630522089,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 163,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 498,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.7971887550200804,
+        "false_report_equivalent": 0.3874458874458874,
+        "missed_non_equivalent": 101,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 462,
+      "n_non_equivalent": 498,
+      "oracle": {
+        "coverage_non_equivalent": 0.9116465863453815,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.12987012987012986,
+        "uncertain_non_equivalent": 0.08835341365461848
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5303030303030303,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 498,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "validation_marker": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5075593952483801,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.6740442655935613,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 162,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 497,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.7987927565392354,
+        "false_report_equivalent": 0.38660907127429806,
+        "missed_non_equivalent": 100,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 463,
+      "n_non_equivalent": 497,
+      "oracle": {
+        "coverage_non_equivalent": 0.8933601609657947,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.18142548596112312,
+        "uncertain_non_equivalent": 0.10663983903420524
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5075593952483801,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 497,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    }
+  },
+  "by_domain": {
+    "chinook_sqlite": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.6061452513966481,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.7647058823529411,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 208,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 884,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.7285067873303167,
+        "false_report_equivalent": 0.30726256983240224,
+        "missed_non_equivalent": 240,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 716,
+      "n_non_equivalent": 884,
+      "oracle": {
+        "coverage_non_equivalent": 0.9230769230769231,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.1270949720670391,
+        "uncertain_non_equivalent": 0.07692307692307693
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5139664804469274,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 884,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "job_queries": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.7164404223227753,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.7139807897545357,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 268,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 937,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.7257203842049093,
+        "false_report_equivalent": 0.277526395173454,
+        "missed_non_equivalent": 257,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 663,
+      "n_non_equivalent": 937,
+      "oracle": {
+        "coverage_non_equivalent": 0.8847385272145144,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.17496229260935142,
+        "uncertain_non_equivalent": 0.1152614727854856
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.6576168929110106,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 937,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "northwind_sqlite": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.4979757085020243,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.7788125727590222,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 190,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 859,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.7147846332945286,
+        "false_report_equivalent": 0.33738191632928477,
+        "missed_non_equivalent": 245,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 741,
+      "n_non_equivalent": 859,
+      "oracle": {
+        "coverage_non_equivalent": 0.9220023282887078,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.10661268556005399,
+        "uncertain_non_equivalent": 0.0779976717112922
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.38596491228070173,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 859,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    }
+  },
+  "by_engine_family": {
+    "deterministic_batch": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.4896907216494845,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.7233009708737864,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 171,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 618,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.7119741100323624,
+        "false_report_equivalent": 0.35738831615120276,
+        "missed_non_equivalent": 178,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 582,
+      "n_non_equivalent": 618,
+      "oracle": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.38831615120274915,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 618,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "hybrid_dual_log": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.6223628691983122,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.7754820936639119,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 163,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 726,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.731404958677686,
+        "false_report_equivalent": 0.2468354430379747,
+        "missed_non_equivalent": 195,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 474,
+      "n_non_equivalent": 726,
+      "oracle": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5421940928270043,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 726,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "occ_mvcc_per_thread_log": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.8125,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.7408854166666666,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 199,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 768,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.7447916666666666,
+        "false_report_equivalent": 0.17592592592592593,
+        "missed_non_equivalent": 196,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 432,
+      "n_non_equivalent": 768,
+      "oracle": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.7731481481481481,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 768,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "weak_marker_stressor": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.5490506329113924,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.7658450704225352,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 133,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 568,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.6954225352112676,
+        "false_report_equivalent": 0.40031645569620256,
+        "missed_non_equivalent": 173,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 632,
+      "n_non_equivalent": 568,
+      "oracle": {
+        "coverage_non_equivalent": 0.5721830985915493,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.4525316455696203,
+        "uncertain_non_equivalent": 0.4278169014084507
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.4319620253164557,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 568,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    }
+  },
+  "by_mutation": {
+    "M0": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.6833333333333333,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "n_equivalent": 480,
+      "n_non_equivalent": 0,
+      "oracle": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.12708333333333333,
+        "uncertain_non_equivalent": null
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.5916666666666667,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      }
+    },
+    "M1": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.7461706783369803,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.13043478260869565,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 20,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 23,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 23,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 457,
+      "n_non_equivalent": 23,
+      "oracle": {
+        "coverage_non_equivalent": 0.8260869565217391,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.17067833698030635,
+        "uncertain_non_equivalent": 0.17391304347826086
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.6761487964989059,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 23,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "M2": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.4930555555555556,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.9270833333333334,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 14,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 192,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 1.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 288,
+      "n_non_equivalent": 192,
+      "oracle": {
+        "coverage_non_equivalent": 0.875,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.16666666666666666,
+        "uncertain_non_equivalent": 0.125
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.4930555555555556,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 192,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "M3": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.36666666666666664,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 360,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.8,
+        "false_report_equivalent": 0.8,
+        "missed_non_equivalent": 72,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 120,
+      "n_non_equivalent": 360,
+      "oracle": {
+        "coverage_non_equivalent": 0.7944444444444444,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.20555555555555555
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.20833333333333334,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 360,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "M4": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.2,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 384,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 480,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.8,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 96,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 0,
+      "n_non_equivalent": 480,
+      "oracle": {
+        "coverage_non_equivalent": 0.9,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.1
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 480,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "M5": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 480,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 0,
+      "n_non_equivalent": 480,
+      "oracle": {
+        "coverage_non_equivalent": 0.88125,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.11875
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 480,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "M6": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.3058823529411765,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 0.2,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 248,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 310,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 1.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 170,
+      "n_non_equivalent": 310,
+      "oracle": {
+        "coverage_non_equivalent": 0.964516129032258,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.11176470588235295,
+        "uncertain_non_equivalent": 0.035483870967741936
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.12941176470588237,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 310,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "M7": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.344,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 355,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.8,
+        "false_report_equivalent": 0.8,
+        "missed_non_equivalent": 71,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 125,
+      "n_non_equivalent": 355,
+      "oracle": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.152,
+        "uncertain_non_equivalent": 0.0
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": 0.192,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 355,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "M8": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 480,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 480,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "n_equivalent": 0,
+      "n_non_equivalent": 480,
+      "oracle": {
+        "coverage_non_equivalent": 0.9479166666666666,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.052083333333333336
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": 1.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": 0.0,
+        "false_report_equivalent": null,
+        "missed_non_equivalent": 480,
+        "uncertain_equivalent": null,
+        "uncertain_non_equivalent": 0.0
+      }
+    },
+    "M9": {
+      "checksum_flat_replay": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.6833333333333333,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "crash_no_crash_diff": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "history_acceptor": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "log_sanity_artifacts": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "log_sanity_trace": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "n_equivalent": 480,
+      "n_non_equivalent": 0,
+      "oracle": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.12708333333333333,
+        "uncertain_non_equivalent": null
+      },
+      "single_log_flat_replay": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.5916666666666667,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      },
+      "writecheck_no_crash": {
+        "coverage_non_equivalent": null,
+        "false_report_equivalent": 0.0,
+        "missed_non_equivalent": 0,
+        "uncertain_equivalent": 0.0,
+        "uncertain_non_equivalent": null
+      }
+    }
+  },
+  "checkers": [
+    "oracle",
+    "single_log_flat_replay",
+    "checksum_flat_replay",
+    "history_acceptor",
+    "log_sanity_artifacts",
+    "log_sanity_trace",
+    "crash_no_crash_diff",
+    "writecheck_no_crash"
+  ],
+  "crash_cut_mode": "none",
+  "dataset_paths": {
+    "chinook_sqlite": "<DATASETS>/chinook_sqlite/Chinook_Sqlite.sqlite",
+    "job_queries": "<DATASETS>/job_queries",
+    "northwind_sqlite": "<DATASETS>/northwind_sqlite/northwind.db"
+  },
+  "domain_records": {
+    "chinook_sqlite": 427,
+    "job_queries": 115,
+    "northwind_sqlite": 519
+  },
+  "n_cells": 4800,
+  "oracle_check_us": {
+    "mean": 110.36,
+    "median": 103.19,
+    "p95": 197.36
+  },
+  "overall": {
+    "checksum_flat_replay": {
+      "coverage_non_equivalent": 1.0,
+      "false_report_equivalent": 0.6028301886792453,
+      "missed_non_equivalent": 0,
+      "uncertain_equivalent": 0.0,
+      "uncertain_non_equivalent": 0.0
+    },
+    "crash_no_crash_diff": {
+      "coverage_non_equivalent": 1.0,
+      "false_report_equivalent": 0.0,
+      "missed_non_equivalent": 0,
+      "uncertain_equivalent": 0.0,
+      "uncertain_non_equivalent": 0.0
+    },
+    "history_acceptor": {
+      "coverage_non_equivalent": 0.7514925373134328,
+      "false_report_equivalent": 0.0,
+      "missed_non_equivalent": 666,
+      "uncertain_equivalent": 0.0,
+      "uncertain_non_equivalent": 0.0
+    },
+    "log_sanity_artifacts": {
+      "coverage_non_equivalent": 0.0,
+      "false_report_equivalent": 0.0,
+      "missed_non_equivalent": 2680,
+      "uncertain_equivalent": 0.0,
+      "uncertain_non_equivalent": 0.0
+    },
+    "log_sanity_trace": {
+      "coverage_non_equivalent": 0.7231343283582089,
+      "false_report_equivalent": 0.30849056603773584,
+      "missed_non_equivalent": 742,
+      "uncertain_equivalent": 0.0,
+      "uncertain_non_equivalent": 0.0
+    },
+    "n_equivalent": 2120,
+    "n_non_equivalent": 2680,
+    "oracle": {
+      "coverage_non_equivalent": 0.9093283582089552,
+      "false_report_equivalent": 0.0,
+      "missed_non_equivalent": 0,
+      "uncertain_equivalent": 0.1349056603773585,
+      "uncertain_non_equivalent": 0.09067164179104478
+    },
+    "single_log_flat_replay": {
+      "coverage_non_equivalent": 1.0,
+      "false_report_equivalent": 0.5141509433962265,
+      "missed_non_equivalent": 0,
+      "uncertain_equivalent": 0.0,
+      "uncertain_non_equivalent": 0.0
+    },
+    "writecheck_no_crash": {
+      "coverage_non_equivalent": 0.0,
+      "false_report_equivalent": 0.0,
+      "missed_non_equivalent": 2680,
+      "uncertain_equivalent": 0.0,
+      "uncertain_non_equivalent": 0.0
+    }
+  },
+  "wall_s": 6.98,
+  "write_model": "overwrite"
+}

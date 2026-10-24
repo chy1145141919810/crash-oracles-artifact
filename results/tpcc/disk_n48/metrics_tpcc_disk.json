@@ -1,0 +1,114 @@
+{
+  "checkers": {
+    "history_acceptor": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 1719,
+      "recall": 0.6442466887417219,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.14921875
+    },
+    "oracle": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 1.0,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.0
+    },
+    "oracle_detorder_only": {
+      "abstain_buggy": 0.9894453642384106,
+      "abstain_clean": 0.9367523923444976,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.010554635761589404,
+      "verdict_rate": 0.04114583333333333,
+      "wrong_among_verdicts": 0.0
+    },
+    "single_log_replay": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 5535,
+      "false_bug_rate": 0.8276016746411483,
+      "missed": 1670,
+      "recall": 0.6543874172185431,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.6254340277777778
+    }
+  },
+  "clean_recovery_differs_from_truth": 0,
+  "config": {
+    "n": 48,
+    "seeds": 40,
+    "warehouses": [
+      1,
+      4
+    ]
+  },
+  "crash_steps": {
+    "0": 480,
+    "1": 255,
+    "2": 251,
+    "3": 249,
+    "4": 278,
+    "5": 274,
+    "6": 37,
+    "7": 44,
+    "8": 50
+  },
+  "dirs_with_torn_tail": 255,
+  "engine_exit_codes": {
+    "-9": 1438,
+    "0": 480
+  },
+  "jobs": 22,
+  "kill_not_as_expected": 0,
+  "n_buggy": 4832,
+  "n_clean": 6688,
+  "n_distinct_crash_points": 1918,
+  "n_recovery_runs": 11520,
+  "per_fault": {
+    "clean": {
+      "history_acceptor": 0,
+      "n_buggy": 0,
+      "oracle": 0,
+      "single_log_replay": 0
+    },
+    "flat_order": {
+      "history_acceptor": 0,
+      "n_buggy": 1670,
+      "oracle": 1670,
+      "single_log_replay": 0
+    },
+    "ignore_validation": {
+      "history_acceptor": 129,
+      "n_buggy": 129,
+      "oracle": 129,
+      "single_log_replay": 129
+    },
+    "stale_checkpoint_noreapply": {
+      "history_acceptor": 795,
+      "n_buggy": 795,
+      "oracle": 795,
+      "single_log_replay": 795
+    },
+    "torn_commit_include": {
+      "history_acceptor": 371,
+      "n_buggy": 371,
+      "oracle": 371,
+      "single_log_replay": 371
+    },
+    "truncate_suffix": {
+      "history_acceptor": 1818,
+      "n_buggy": 1867,
+      "oracle": 1867,
+      "single_log_replay": 1867
+    }
+  },
+  "wall_s": 10.9
+}

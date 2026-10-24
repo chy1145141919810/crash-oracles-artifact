@@ -1,0 +1,276 @@
+{
+  "n_rows_v1": 17280,
+  "n_rows_v2": 17280,
+  "shared_columns": [
+    "domain",
+    "seed",
+    "mix_det",
+    "ckpt_after",
+    "drop_last",
+    "fault",
+    "hide_frontier",
+    "buggy",
+    "n_committed",
+    "oracle_pred",
+    "oracle_outcome",
+    "single_log_replay_pred",
+    "single_log_replay_outcome",
+    "history_acceptor_pred",
+    "history_acceptor_outcome"
+  ],
+  "shared_columns_identical": true,
+  "v1_diff_equals_v2_legacy": true,
+  "overall_full_adapter": {
+    "fixed": {
+      "n_buggy": 4232,
+      "detected": 4232,
+      "recall": 1.0,
+      "n_clean": 4408,
+      "false_bug": 2356,
+      "false_bug_rate": 0.5344827586206896
+    },
+    "legacy": {
+      "n_buggy": 4232,
+      "detected": 4232,
+      "recall": 1.0,
+      "n_clean": 4408,
+      "false_bug": 2476,
+      "false_bug_rate": 0.5617059891107078
+    }
+  },
+  "by_drop_last": {
+    "0": {
+      "fixed": {
+        "n_buggy": 828,
+        "detected": 828,
+        "recall": 1.0,
+        "n_clean": 2052,
+        "false_bug": 0,
+        "false_bug_rate": 0.0
+      },
+      "legacy": {
+        "n_buggy": 828,
+        "detected": 828,
+        "recall": 1.0,
+        "n_clean": 2052,
+        "false_bug": 120,
+        "false_bug_rate": 0.05847953216374269
+      }
+    },
+    "2": {
+      "fixed": {
+        "n_buggy": 1681,
+        "detected": 1681,
+        "recall": 1.0,
+        "n_clean": 1199,
+        "false_bug": 1199,
+        "false_bug_rate": 1.0
+      },
+      "legacy": {
+        "n_buggy": 1681,
+        "detected": 1681,
+        "recall": 1.0,
+        "n_clean": 1199,
+        "false_bug": 1199,
+        "false_bug_rate": 1.0
+      }
+    },
+    "4": {
+      "fixed": {
+        "n_buggy": 1723,
+        "detected": 1723,
+        "recall": 1.0,
+        "n_clean": 1157,
+        "false_bug": 1157,
+        "false_bug_rate": 1.0
+      },
+      "legacy": {
+        "n_buggy": 1723,
+        "detected": 1723,
+        "recall": 1.0,
+        "n_clean": 1157,
+        "false_bug": 1157,
+        "false_bug_rate": 1.0
+      }
+    }
+  },
+  "by_checkpoint": {
+    "off(ckpt_after=0)": {
+      "fixed": {
+        "n_buggy": 1856,
+        "detected": 1856,
+        "recall": 1.0,
+        "n_clean": 2464,
+        "false_bug": 1351,
+        "false_bug_rate": 0.5482954545454546
+      },
+      "legacy": {
+        "n_buggy": 1856,
+        "detected": 1856,
+        "recall": 1.0,
+        "n_clean": 2464,
+        "false_bug": 1414,
+        "false_bug_rate": 0.5738636363636364
+      }
+    },
+    "on(ckpt_after>0)": {
+      "fixed": {
+        "n_buggy": 2376,
+        "detected": 2376,
+        "recall": 1.0,
+        "n_clean": 1944,
+        "false_bug": 1005,
+        "false_bug_rate": 0.5169753086419753
+      },
+      "legacy": {
+        "n_buggy": 2376,
+        "detected": 2376,
+        "recall": 1.0,
+        "n_clean": 1944,
+        "false_bug": 1062,
+        "false_bug_rate": 0.5462962962962963
+      }
+    }
+  },
+  "by_drop_last_and_checkpoint": {
+    "drop0_ckptoff": {
+      "fixed": {
+        "n_buggy": 327,
+        "detected": 327,
+        "recall": 1.0,
+        "n_clean": 1113,
+        "false_bug": 0,
+        "false_bug_rate": 0.0
+      },
+      "legacy": {
+        "n_buggy": 327,
+        "detected": 327,
+        "recall": 1.0,
+        "n_clean": 1113,
+        "false_bug": 63,
+        "false_bug_rate": 0.05660377358490566
+      }
+    },
+    "drop0_ckpton": {
+      "fixed": {
+        "n_buggy": 501,
+        "detected": 501,
+        "recall": 1.0,
+        "n_clean": 939,
+        "false_bug": 0,
+        "false_bug_rate": 0.0
+      },
+      "legacy": {
+        "n_buggy": 501,
+        "detected": 501,
+        "recall": 1.0,
+        "n_clean": 939,
+        "false_bug": 57,
+        "false_bug_rate": 0.06070287539936102
+      }
+    },
+    "drop2_ckptoff": {
+      "fixed": {
+        "n_buggy": 754,
+        "detected": 754,
+        "recall": 1.0,
+        "n_clean": 686,
+        "false_bug": 686,
+        "false_bug_rate": 1.0
+      },
+      "legacy": {
+        "n_buggy": 754,
+        "detected": 754,
+        "recall": 1.0,
+        "n_clean": 686,
+        "false_bug": 686,
+        "false_bug_rate": 1.0
+      }
+    },
+    "drop2_ckpton": {
+      "fixed": {
+        "n_buggy": 927,
+        "detected": 927,
+        "recall": 1.0,
+        "n_clean": 513,
+        "false_bug": 513,
+        "false_bug_rate": 1.0
+      },
+      "legacy": {
+        "n_buggy": 927,
+        "detected": 927,
+        "recall": 1.0,
+        "n_clean": 513,
+        "false_bug": 513,
+        "false_bug_rate": 1.0
+      }
+    },
+    "drop4_ckptoff": {
+      "fixed": {
+        "n_buggy": 775,
+        "detected": 775,
+        "recall": 1.0,
+        "n_clean": 665,
+        "false_bug": 665,
+        "false_bug_rate": 1.0
+      },
+      "legacy": {
+        "n_buggy": 775,
+        "detected": 775,
+        "recall": 1.0,
+        "n_clean": 665,
+        "false_bug": 665,
+        "false_bug_rate": 1.0
+      }
+    },
+    "drop4_ckpton": {
+      "fixed": {
+        "n_buggy": 948,
+        "detected": 948,
+        "recall": 1.0,
+        "n_clean": 492,
+        "false_bug": 492,
+        "false_bug_rate": 1.0
+      },
+      "legacy": {
+        "n_buggy": 948,
+        "detected": 948,
+        "recall": 1.0,
+        "n_clean": 492,
+        "false_bug": 492,
+        "false_bug_rate": 1.0
+      }
+    }
+  },
+  "clean_fault_rows_full_adapter_by_drop_last": {
+    "0": 480,
+    "2": 480,
+    "4": 480
+  },
+  "other_checkers_full_adapter": {
+    "oracle": {
+      "n_buggy": 4232,
+      "detected": 4232,
+      "recall": 1.0,
+      "n_clean": 4408,
+      "false_bug": 0,
+      "false_bug_rate": 0.0
+    },
+    "single_log_replay": {
+      "n_buggy": 4232,
+      "detected": 3911,
+      "recall": 0.9241493383742911,
+      "n_clean": 4408,
+      "false_bug": 820,
+      "false_bug_rate": 0.18602540834845735
+    },
+    "history_acceptor": {
+      "n_buggy": 4232,
+      "detected": 3829,
+      "recall": 0.904773156899811,
+      "n_clean": 4408,
+      "false_bug": 0,
+      "false_bug_rate": 0.0
+    }
+  }
+}

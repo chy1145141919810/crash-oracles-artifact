@@ -1,0 +1,538 @@
+{
+  "config": {
+    "n": 48,
+    "seeds": 40,
+    "theta": 0.99,
+    "workload": "ycsb",
+    "writes_per_txn": 3
+  },
+  "n_buggy": 5111,
+  "n_clean": 3529,
+  "n_runs": 8640,
+  "regression_vs_v3": {
+    "L0_equals_v3_hidden": 8640,
+    "L2_equals_v3_full": 8640,
+    "L3_equals_v3_full": 8640,
+    "n": 8640
+  },
+  "settings": {
+    "L0": {
+      "buggy": {
+        "abstained": 5111,
+        "detected": 0,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 3529,
+        "correct": 0,
+        "false_bug": 0
+      },
+      "fault": null,
+      "level": 0,
+      "oracle_mean_us": 53.2,
+      "oracle_p95_us": 68.91,
+      "rate": 0.0,
+      "raw_verdicts": {
+        "uncertain": 8640
+      },
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L1": {
+      "buggy": {
+        "abstained": 5111,
+        "detected": 0,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 3529,
+        "correct": 0,
+        "false_bug": 0
+      },
+      "fault": null,
+      "level": 1,
+      "oracle_mean_us": 50.92,
+      "oracle_p95_us": 65.03,
+      "rate": 0.0,
+      "raw_verdicts": {
+        "uncertain": 8640
+      },
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L2": {
+      "buggy": {
+        "abstained": 0,
+        "detected": 5111,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 0,
+        "correct": 3529,
+        "false_bug": 0
+      },
+      "fault": null,
+      "level": 2,
+      "oracle_mean_us": 321.51,
+      "oracle_p95_us": 354.42,
+      "rate": 0.0,
+      "raw_verdicts": {
+        "match": 3529,
+        "mismatch": 5111
+      },
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L2_missing0.10": {
+      "buggy": {
+        "abstained": 1889,
+        "detected": 3222,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 1375,
+        "correct": 2154,
+        "false_bug": 0
+      },
+      "fault": "missing",
+      "level": 2,
+      "oracle_mean_us": 220.01,
+      "oracle_p95_us": 342.84,
+      "rate": 0.1,
+      "raw_verdicts": {
+        "match": 2154,
+        "mismatch": 3222,
+        "uncertain": 3264
+      },
+      "verdict_rate": 0.6222222222222222,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L2_missing0.25": {
+      "buggy": {
+        "abstained": 3511,
+        "detected": 1600,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 2585,
+        "correct": 944,
+        "false_bug": 0
+      },
+      "fault": "missing",
+      "level": 2,
+      "oracle_mean_us": 133.38,
+      "oracle_p95_us": 332.99,
+      "rate": 0.25,
+      "raw_verdicts": {
+        "match": 944,
+        "mismatch": 1600,
+        "uncertain": 6096
+      },
+      "verdict_rate": 0.29444444444444445,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L2_missing0.50": {
+      "buggy": {
+        "abstained": 4612,
+        "detected": 499,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 3278,
+        "correct": 251,
+        "false_bug": 0
+      },
+      "fault": "missing",
+      "level": 2,
+      "oracle_mean_us": 75.97,
+      "oracle_p95_us": 292.11,
+      "rate": 0.5,
+      "raw_verdicts": {
+        "match": 251,
+        "mismatch": 499,
+        "uncertain": 7890
+      },
+      "verdict_rate": 0.08680555555555555,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L2_stale0.05": {
+      "buggy": {
+        "abstained": 1690,
+        "detected": 3420,
+        "missed": 1
+      },
+      "clean": {
+        "abstained": 1238,
+        "correct": 2250,
+        "false_bug": 41
+      },
+      "fault": "stale",
+      "level": 2,
+      "oracle_mean_us": 216.93,
+      "oracle_p95_us": 341.54,
+      "rate": 0.05,
+      "raw_verdicts": {
+        "match": 2251,
+        "mismatch": 3461,
+        "precfail": 2928
+      },
+      "verdict_rate": 0.6611111111111111,
+      "wrong_among_verdicts": 0.007352941176470588,
+      "wrong_verdicts": 42
+    },
+    "L2_stale0.25": {
+      "buggy": {
+        "abstained": 3833,
+        "detected": 1274,
+        "missed": 4
+      },
+      "clean": {
+        "abstained": 2695,
+        "correct": 741,
+        "false_bug": 93
+      },
+      "fault": "stale",
+      "level": 2,
+      "oracle_mean_us": 96.9,
+      "oracle_p95_us": 332.41,
+      "rate": 0.25,
+      "raw_verdicts": {
+        "match": 745,
+        "mismatch": 1367,
+        "precfail": 6528
+      },
+      "verdict_rate": 0.24444444444444444,
+      "wrong_among_verdicts": 0.045928030303030304,
+      "wrong_verdicts": 97
+    },
+    "L2_wrong0.05": {
+      "buggy": {
+        "abstained": 2189,
+        "detected": 2920,
+        "missed": 2
+      },
+      "clean": {
+        "abstained": 1573,
+        "correct": 1945,
+        "false_bug": 11
+      },
+      "fault": "wrong",
+      "level": 2,
+      "oracle_mean_us": 187.12,
+      "oracle_p95_us": 339.18,
+      "rate": 0.05,
+      "raw_verdicts": {
+        "match": 1947,
+        "mismatch": 2931,
+        "precfail": 3762
+      },
+      "verdict_rate": 0.5645833333333333,
+      "wrong_among_verdicts": 0.0026650266502665026,
+      "wrong_verdicts": 13
+    },
+    "L2_wrong0.25": {
+      "buggy": {
+        "abstained": 4511,
+        "detected": 599,
+        "missed": 1
+      },
+      "clean": {
+        "abstained": 3157,
+        "correct": 346,
+        "false_bug": 26
+      },
+      "fault": "wrong",
+      "level": 2,
+      "oracle_mean_us": 57.1,
+      "oracle_p95_us": 301.92,
+      "rate": 0.25,
+      "raw_verdicts": {
+        "match": 347,
+        "mismatch": 625,
+        "precfail": 7668
+      },
+      "verdict_rate": 0.1125,
+      "wrong_among_verdicts": 0.027777777777777776,
+      "wrong_verdicts": 27
+    },
+    "L3": {
+      "buggy": {
+        "abstained": 0,
+        "detected": 5111,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 0,
+        "correct": 3529,
+        "false_bug": 0
+      },
+      "fault": null,
+      "level": 3,
+      "oracle_mean_us": 325.76,
+      "oracle_p95_us": 361.8,
+      "rate": 0.0,
+      "raw_verdicts": {
+        "match": 3529,
+        "mismatch": 5111
+      },
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L3_ckpt_extra": {
+      "buggy": {
+        "abstained": 0,
+        "detected": 5111,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 0,
+        "correct": 2271,
+        "false_bug": 1258
+      },
+      "fault": "ckpt_extra",
+      "level": 3,
+      "oracle_mean_us": 320.97,
+      "oracle_p95_us": 353.42,
+      "rate": 1.0,
+      "raw_verdicts": {
+        "match": 2271,
+        "mismatch": 6369
+      },
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.14560185185185184,
+      "wrong_verdicts": 1258
+    },
+    "L3_missing0.10": {
+      "buggy": {
+        "abstained": 152,
+        "detected": 4959,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 130,
+        "correct": 3399,
+        "false_bug": 0
+      },
+      "fault": "missing",
+      "level": 3,
+      "oracle_mean_us": 312.64,
+      "oracle_p95_us": 355.09,
+      "rate": 0.1,
+      "raw_verdicts": {
+        "match": 3399,
+        "mismatch": 4959,
+        "uncertain": 282
+      },
+      "verdict_rate": 0.9673611111111111,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L3_missing0.25": {
+      "buggy": {
+        "abstained": 1080,
+        "detected": 4031,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 840,
+        "correct": 2689,
+        "false_bug": 0
+      },
+      "fault": "missing",
+      "level": 3,
+      "oracle_mean_us": 263.2,
+      "oracle_p95_us": 350.51,
+      "rate": 0.25,
+      "raw_verdicts": {
+        "match": 2689,
+        "mismatch": 4031,
+        "uncertain": 1920
+      },
+      "verdict_rate": 0.7777777777777778,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L3_missing0.50": {
+      "buggy": {
+        "abstained": 3423,
+        "detected": 1688,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 2505,
+        "correct": 1024,
+        "false_bug": 0
+      },
+      "fault": "missing",
+      "level": 3,
+      "oracle_mean_us": 140.82,
+      "oracle_p95_us": 336.21,
+      "rate": 0.5,
+      "raw_verdicts": {
+        "match": 1024,
+        "mismatch": 1688,
+        "uncertain": 5928
+      },
+      "verdict_rate": 0.3138888888888889,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L3_stale0.05": {
+      "buggy": {
+        "abstained": 2428,
+        "detected": 2683,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 1748,
+        "correct": 1781,
+        "false_bug": 0
+      },
+      "fault": "stale",
+      "level": 3,
+      "oracle_mean_us": 179.52,
+      "oracle_p95_us": 350.45,
+      "rate": 0.05,
+      "raw_verdicts": {
+        "match": 1781,
+        "mismatch": 2683,
+        "precfail": 4176
+      },
+      "verdict_rate": 0.5166666666666667,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L3_stale0.25": {
+      "buggy": {
+        "abstained": 4730,
+        "detected": 381,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 3292,
+        "correct": 237,
+        "false_bug": 0
+      },
+      "fault": "stale",
+      "level": 3,
+      "oracle_mean_us": 49.88,
+      "oracle_p95_us": 298.69,
+      "rate": 0.25,
+      "raw_verdicts": {
+        "match": 237,
+        "mismatch": 381,
+        "precfail": 8022
+      },
+      "verdict_rate": 0.07152777777777777,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L3_swapocc0.05": {
+      "buggy": {
+        "abstained": 1347,
+        "detected": 3764,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 951,
+        "correct": 2510,
+        "false_bug": 68
+      },
+      "fault": "swapocc",
+      "level": 3,
+      "oracle_mean_us": 242.75,
+      "oracle_p95_us": 351.41,
+      "rate": 0.05,
+      "raw_verdicts": {
+        "match": 2510,
+        "mismatch": 3832,
+        "precfail": 2298
+      },
+      "verdict_rate": 0.7340277777777777,
+      "wrong_among_verdicts": 0.010722169662567014,
+      "wrong_verdicts": 68
+    },
+    "L3_swapocc0.25": {
+      "buggy": {
+        "abstained": 3858,
+        "detected": 1253,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 2784,
+        "correct": 659,
+        "false_bug": 86
+      },
+      "fault": "swapocc",
+      "level": 3,
+      "oracle_mean_us": 96.89,
+      "oracle_p95_us": 335.14,
+      "rate": 0.25,
+      "raw_verdicts": {
+        "match": 659,
+        "mismatch": 1339,
+        "precfail": 6642
+      },
+      "verdict_rate": 0.23125,
+      "wrong_among_verdicts": 0.043043043043043044,
+      "wrong_verdicts": 86
+    },
+    "L3_wrong0.05": {
+      "buggy": {
+        "abstained": 2463,
+        "detected": 2648,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 1821,
+        "correct": 1708,
+        "false_bug": 0
+      },
+      "fault": "wrong",
+      "level": 3,
+      "oracle_mean_us": 174.18,
+      "oracle_p95_us": 347.62,
+      "rate": 0.05,
+      "raw_verdicts": {
+        "match": 1708,
+        "mismatch": 2648,
+        "precfail": 4284
+      },
+      "verdict_rate": 0.5041666666666667,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    },
+    "L3_wrong0.25": {
+      "buggy": {
+        "abstained": 4713,
+        "detected": 398,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 3291,
+        "correct": 238,
+        "false_bug": 0
+      },
+      "fault": "wrong",
+      "level": 3,
+      "oracle_mean_us": 49.72,
+      "oracle_p95_us": 299.66,
+      "rate": 0.25,
+      "raw_verdicts": {
+        "match": 238,
+        "mismatch": 398,
+        "precfail": 8004
+      },
+      "verdict_rate": 0.07361111111111111,
+      "wrong_among_verdicts": 0.0,
+      "wrong_verdicts": 0
+    }
+  }
+}

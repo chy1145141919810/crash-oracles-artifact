@@ -1,0 +1,93 @@
+{
+  "checkers": {
+    "history_acceptor": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 2352,
+      "recall": 0.5565610859728507
+    },
+    "oracle": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "oracle_detorder_only": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0
+    },
+    "single_log_replay": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 3336,
+      "false_bug_rate": 1.0,
+      "missed": 1440,
+      "recall": 0.7285067873303167
+    }
+  },
+  "config": {
+    "keys_requested": 40000,
+    "n": 5000,
+    "seeds": 40,
+    "theta": 0.99,
+    "workload": "ycsb",
+    "writes_per_txn": 1
+  },
+  "jobs": 22,
+  "n_buggy": 5304,
+  "n_clean": 3336,
+  "n_runs": 8640,
+  "per_fault": {
+    "clean": {
+      "history_acceptor": 0,
+      "n_buggy": 0,
+      "oracle": 0,
+      "single_log_replay": 0
+    },
+    "flat_order": {
+      "history_acceptor": 0,
+      "n_buggy": 1440,
+      "oracle": 1440,
+      "single_log_replay": 0
+    },
+    "ignore_validation": {
+      "history_acceptor": 744,
+      "n_buggy": 744,
+      "oracle": 744,
+      "single_log_replay": 744
+    },
+    "stale_checkpoint_noreapply": {
+      "history_acceptor": 720,
+      "n_buggy": 720,
+      "oracle": 720,
+      "single_log_replay": 720
+    },
+    "torn_commit_include": {
+      "history_acceptor": 960,
+      "n_buggy": 960,
+      "oracle": 960,
+      "single_log_replay": 960
+    },
+    "truncate_suffix": {
+      "history_acceptor": 528,
+      "n_buggy": 1440,
+      "oracle": 1440,
+      "single_log_replay": 1440
+    }
+  },
+  "wall_s": 30.8,
+  "workload_stats": {
+    "engine_executions": 480,
+    "mean_committed": 4967.5625,
+    "mean_keys": 27803.5,
+    "occ_abort_rate": 0.01298725130706635
+  }
+}

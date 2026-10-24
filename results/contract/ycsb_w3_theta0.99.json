@@ -1,0 +1,354 @@
+{
+ "label_changes_by_fault": {
+  "torn_commit_include": 120
+ },
+ "label_changes_strict_to_lenient": 120,
+ "lenient": {
+  "elle_cli_default": {
+   "detected": 226,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 281,
+   "n_buggy": 507,
+   "n_clean": 573,
+   "no_verdict": 0,
+   "recall": 0.4457593688362919
+  },
+  "elle_lin": {
+   "detected": 417,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 90,
+   "n_buggy": 507,
+   "n_clean": 573,
+   "no_verdict": 0,
+   "recall": 0.8224852071005917
+  },
+  "elle_wfr": {
+   "detected": 292,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 215,
+   "n_buggy": 507,
+   "n_clean": 573,
+   "no_verdict": 0,
+   "recall": 0.5759368836291914
+  },
+  "elle_wfr_lin": {
+   "detected": 417,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 90,
+   "n_buggy": 507,
+   "n_clean": 573,
+   "no_verdict": 0,
+   "recall": 0.8224852071005917
+  },
+  "history_acceptor": {
+   "detected": 321,
+   "false_bug": 120,
+   "false_bug_rate": 0.2094240837696335,
+   "missed": 186,
+   "n_buggy": 507,
+   "n_clean": 573,
+   "no_verdict": 0,
+   "recall": 0.6331360946745562
+  },
+  "oracle_lenient": {
+   "detected": 507,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 0,
+   "n_buggy": 507,
+   "n_clean": 573,
+   "no_verdict": 0,
+   "recall": 1.0
+  },
+  "oracle_strict": {
+   "detected": 507,
+   "false_bug": 120,
+   "false_bug_rate": 0.2094240837696335,
+   "missed": 0,
+   "n_buggy": 507,
+   "n_clean": 573,
+   "no_verdict": 0,
+   "recall": 1.0
+  },
+  "single_log_replay": {
+   "detected": 360,
+   "false_bug": 461,
+   "false_bug_rate": 0.8045375218150087,
+   "missed": 147,
+   "n_buggy": 507,
+   "n_clean": 573,
+   "no_verdict": 0,
+   "recall": 0.7100591715976331
+  }
+ },
+ "n_runs": 1080,
+ "per_fault": {
+  "flat_order": {
+   "buggy_lenient": 147,
+   "buggy_strict": 147,
+   "elle_cli_default": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "elle_lin": {
+    "reported": 147,
+    "reported_and_buggy_lenient": 147
+   },
+   "elle_wfr": {
+    "reported": 60,
+    "reported_and_buggy_lenient": 60
+   },
+   "elle_wfr_lin": {
+    "reported": 147,
+    "reported_and_buggy_lenient": 147
+   },
+   "history_acceptor": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "oracle_lenient": {
+    "reported": 147,
+    "reported_and_buggy_lenient": 147
+   },
+   "oracle_strict": {
+    "reported": 147,
+    "reported_and_buggy_lenient": 147
+   },
+   "single_log_replay": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   }
+  },
+  "ignore_validation": {
+   "buggy_lenient": 90,
+   "buggy_strict": 90,
+   "elle_cli_default": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "elle_lin": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "elle_wfr": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "elle_wfr_lin": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "history_acceptor": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "oracle_lenient": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "oracle_strict": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "single_log_replay": {
+    "reported": 157,
+    "reported_and_buggy_lenient": 90
+   }
+  },
+  "stale_checkpoint_noreapply": {
+   "buggy_lenient": 90,
+   "buggy_strict": 90,
+   "elle_cli_default": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "elle_lin": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "elle_wfr": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "elle_wfr_lin": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "history_acceptor": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "oracle_lenient": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "oracle_strict": {
+    "reported": 90,
+    "reported_and_buggy_lenient": 90
+   },
+   "single_log_replay": {
+    "reported": 166,
+    "reported_and_buggy_lenient": 90
+   }
+  },
+  "torn_commit_include": {
+   "buggy_lenient": 0,
+   "buggy_strict": 120,
+   "elle_cli_default": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "elle_lin": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "elle_wfr": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "elle_wfr_lin": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "history_acceptor": {
+    "reported": 120,
+    "reported_and_buggy_lenient": 0
+   },
+   "oracle_lenient": {
+    "reported": 0,
+    "reported_and_buggy_lenient": 0
+   },
+   "oracle_strict": {
+    "reported": 120,
+    "reported_and_buggy_lenient": 0
+   },
+   "single_log_replay": {
+    "reported": 171,
+    "reported_and_buggy_lenient": 0
+   }
+  },
+  "truncate_suffix": {
+   "buggy_lenient": 180,
+   "buggy_strict": 180,
+   "elle_cli_default": {
+    "reported": 136,
+    "reported_and_buggy_lenient": 136
+   },
+   "elle_lin": {
+    "reported": 180,
+    "reported_and_buggy_lenient": 180
+   },
+   "elle_wfr": {
+    "reported": 142,
+    "reported_and_buggy_lenient": 142
+   },
+   "elle_wfr_lin": {
+    "reported": 180,
+    "reported_and_buggy_lenient": 180
+   },
+   "history_acceptor": {
+    "reported": 141,
+    "reported_and_buggy_lenient": 141
+   },
+   "oracle_lenient": {
+    "reported": 180,
+    "reported_and_buggy_lenient": 180
+   },
+   "oracle_strict": {
+    "reported": 180,
+    "reported_and_buggy_lenient": 180
+   },
+   "single_log_replay": {
+    "reported": 180,
+    "reported_and_buggy_lenient": 180
+   }
+  }
+ },
+ "runs_with_in_doubt_txn": 720,
+ "strict": {
+  "elle_cli_default": {
+   "detected": 226,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 401,
+   "n_buggy": 627,
+   "n_clean": 453,
+   "no_verdict": 0,
+   "recall": 0.36044657097288674
+  },
+  "elle_lin": {
+   "detected": 417,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 210,
+   "n_buggy": 627,
+   "n_clean": 453,
+   "no_verdict": 0,
+   "recall": 0.6650717703349283
+  },
+  "elle_wfr": {
+   "detected": 292,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 335,
+   "n_buggy": 627,
+   "n_clean": 453,
+   "no_verdict": 0,
+   "recall": 0.46570972886762363
+  },
+  "elle_wfr_lin": {
+   "detected": 417,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 210,
+   "n_buggy": 627,
+   "n_clean": 453,
+   "no_verdict": 0,
+   "recall": 0.6650717703349283
+  },
+  "history_acceptor": {
+   "detected": 441,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 186,
+   "n_buggy": 627,
+   "n_clean": 453,
+   "no_verdict": 0,
+   "recall": 0.7033492822966507
+  },
+  "oracle_lenient": {
+   "detected": 507,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 120,
+   "n_buggy": 627,
+   "n_clean": 453,
+   "no_verdict": 0,
+   "recall": 0.8086124401913876
+  },
+  "oracle_strict": {
+   "detected": 627,
+   "false_bug": 0,
+   "false_bug_rate": 0.0,
+   "missed": 0,
+   "n_buggy": 627,
+   "n_clean": 453,
+   "no_verdict": 0,
+   "recall": 1.0
+  },
+  "single_log_replay": {
+   "detected": 480,
+   "false_bug": 341,
+   "false_bug_rate": 0.7527593818984547,
+   "missed": 147,
+   "n_buggy": 627,
+   "n_clean": 453,
+   "no_verdict": 0,
+   "recall": 0.7655502392344498
+  }
+ }
+}

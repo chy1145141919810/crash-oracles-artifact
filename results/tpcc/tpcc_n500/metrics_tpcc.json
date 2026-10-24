@@ -1,0 +1,388 @@
+{
+  "by_warehouses": {
+    "1": {
+      "history_acceptor": {
+        "abstain_buggy": 0.0,
+        "abstain_clean": 0.0,
+        "false_bug": 0,
+        "false_bug_rate": 0.0,
+        "missed": 1225,
+        "recall": 0.5292083013066872,
+        "verdict_rate": 1.0,
+        "wrong_among_verdicts": 0.2835648148148148
+      },
+      "oracle": {
+        "abstain_buggy": 0.0,
+        "abstain_clean": 0.0,
+        "false_bug": 0,
+        "false_bug_rate": 0.0,
+        "missed": 0,
+        "recall": 1.0,
+        "verdict_rate": 1.0,
+        "wrong_among_verdicts": 0.0
+      },
+      "single_log_replay": {
+        "abstain_buggy": 0.0,
+        "abstain_clean": 0.0,
+        "false_bug": 1718,
+        "false_bug_rate": 1.0,
+        "missed": 720,
+        "recall": 0.7232897770945427,
+        "verdict_rate": 1.0,
+        "wrong_among_verdicts": 0.5643518518518519
+      }
+    },
+    "4": {
+      "history_acceptor": {
+        "abstain_buggy": 0.0,
+        "abstain_clean": 0.0,
+        "false_bug": 0,
+        "false_bug_rate": 0.0,
+        "missed": 913,
+        "recall": 0.6552114803625377,
+        "verdict_rate": 1.0,
+        "wrong_among_verdicts": 0.21134259259259258
+      },
+      "oracle": {
+        "abstain_buggy": 0.0,
+        "abstain_clean": 0.0,
+        "false_bug": 0,
+        "false_bug_rate": 0.0,
+        "missed": 0,
+        "recall": 1.0,
+        "verdict_rate": 1.0,
+        "wrong_among_verdicts": 0.0
+      },
+      "single_log_replay": {
+        "abstain_buggy": 0.0,
+        "abstain_clean": 0.0,
+        "false_bug": 1672,
+        "false_bug_rate": 1.0,
+        "missed": 720,
+        "recall": 0.7280966767371602,
+        "verdict_rate": 1.0,
+        "wrong_among_verdicts": 0.5537037037037037
+      }
+    }
+  },
+  "checkers": {
+    "history_acceptor": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 2138,
+      "recall": 0.5927619047619047,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.2474537037037037
+    },
+    "oracle": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 1.0,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.0
+    },
+    "single_log_replay": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 3390,
+      "false_bug_rate": 1.0,
+      "missed": 1440,
+      "recall": 0.7257142857142858,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.5590277777777778
+    }
+  },
+  "clean_recovery_differs_from_truth": 0,
+  "config": {
+    "customers_per_district": 30,
+    "districts": 10,
+    "items": 200,
+    "n": 500,
+    "seeds": 40,
+    "warehouses": [
+      1,
+      4
+    ]
+  },
+  "jobs": 22,
+  "metadata": {
+    "L0": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0,
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": null
+    },
+    "L1": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0,
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": null
+    },
+    "L2": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 1.0,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.0
+    },
+    "L2_missing0.10": {
+      "abstain_buggy": 0.9441904761904761,
+      "abstain_clean": 0.948377581120944,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.05580952380952381,
+      "verdict_rate": 0.05416666666666667,
+      "wrong_among_verdicts": 0.0
+    },
+    "L2_missing0.25": {
+      "abstain_buggy": 0.9982857142857143,
+      "abstain_clean": 0.9991150442477876,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0017142857142857142,
+      "verdict_rate": 0.001388888888888889,
+      "wrong_among_verdicts": 0.0
+    },
+    "L2_missing0.50": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0,
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": null
+    },
+    "L2_stale0.05": {
+      "abstain_buggy": 0.8998095238095238,
+      "abstain_clean": 0.8932153392330383,
+      "false_bug": 14,
+      "false_bug_rate": 0.004129793510324484,
+      "missed": 0,
+      "recall": 0.10019047619047619,
+      "verdict_rate": 0.10277777777777777,
+      "wrong_among_verdicts": 0.015765765765765764
+    },
+    "L2_stale0.25": {
+      "abstain_buggy": 0.9988571428571429,
+      "abstain_clean": 0.9982300884955753,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.001142857142857143,
+      "verdict_rate": 0.001388888888888889,
+      "wrong_among_verdicts": 0.0
+    },
+    "L2_wrong0.05": {
+      "abstain_buggy": 0.9925714285714285,
+      "abstain_clean": 0.9938053097345133,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0074285714285714285,
+      "verdict_rate": 0.006944444444444444,
+      "wrong_among_verdicts": 0.0
+    },
+    "L2_wrong0.25": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0,
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": null
+    },
+    "L3": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 1.0,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.0
+    },
+    "L3_ckpt_extra": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 1335,
+      "false_bug_rate": 0.3938053097345133,
+      "missed": 0,
+      "recall": 1.0,
+      "verdict_rate": 1.0,
+      "wrong_among_verdicts": 0.1545138888888889
+    },
+    "L3_missing0.10": {
+      "abstain_buggy": 0.22914285714285715,
+      "abstain_clean": 0.24336283185840707,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.7708571428571429,
+      "verdict_rate": 0.7652777777777777,
+      "wrong_among_verdicts": 0.0
+    },
+    "L3_missing0.25": {
+      "abstain_buggy": 0.7662857142857142,
+      "abstain_clean": 0.7814159292035399,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.2337142857142857,
+      "verdict_rate": 0.22777777777777777,
+      "wrong_among_verdicts": 0.0
+    },
+    "L3_missing0.50": {
+      "abstain_buggy": 0.9952380952380953,
+      "abstain_clean": 0.9967551622418879,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.004761904761904762,
+      "verdict_rate": 0.004166666666666667,
+      "wrong_among_verdicts": 0.0
+    },
+    "L3_stale0.05": {
+      "abstain_buggy": 0.9864761904761905,
+      "abstain_clean": 0.987315634218289,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.013523809523809523,
+      "verdict_rate": 0.013194444444444444,
+      "wrong_among_verdicts": 0.0
+    },
+    "L3_stale0.25": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0,
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": null
+    },
+    "L3_swapocc0.05": {
+      "abstain_buggy": 0.9666666666666667,
+      "abstain_clean": 0.9684365781710914,
+      "false_bug": 1,
+      "false_bug_rate": 0.0002949852507374631,
+      "missed": 0,
+      "recall": 0.03333333333333333,
+      "verdict_rate": 0.03263888888888889,
+      "wrong_among_verdicts": 0.0035460992907801418
+    },
+    "L3_swapocc0.25": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0,
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": null
+    },
+    "L3_wrong0.05": {
+      "abstain_buggy": 0.9872380952380952,
+      "abstain_clean": 0.987905604719764,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.012761904761904763,
+      "verdict_rate": 0.0125,
+      "wrong_among_verdicts": 0.0
+    },
+    "L3_wrong0.25": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0,
+      "verdict_rate": 0.0,
+      "wrong_among_verdicts": null
+    }
+  },
+  "n_buggy": 5250,
+  "n_clean": 3390,
+  "n_runs": 8640,
+  "per_fault": {
+    "clean": {
+      "history_acceptor": 0,
+      "n_buggy": 0,
+      "oracle": 0,
+      "single_log_replay": 0
+    },
+    "flat_order": {
+      "history_acceptor": 0,
+      "n_buggy": 1440,
+      "oracle": 1440,
+      "single_log_replay": 0
+    },
+    "ignore_validation": {
+      "history_acceptor": 690,
+      "n_buggy": 690,
+      "oracle": 690,
+      "single_log_replay": 690
+    },
+    "stale_checkpoint_noreapply": {
+      "history_acceptor": 720,
+      "n_buggy": 720,
+      "oracle": 720,
+      "single_log_replay": 720
+    },
+    "torn_commit_include": {
+      "history_acceptor": 960,
+      "n_buggy": 960,
+      "oracle": 960,
+      "single_log_replay": 960
+    },
+    "truncate_suffix": {
+      "history_acceptor": 742,
+      "n_buggy": 1440,
+      "oracle": 1440,
+      "single_log_replay": 1440
+    }
+  },
+  "wall_s": 30.7,
+  "workload": {
+    "committed_by_type": {
+      "delivery": 8086,
+      "new_order": 108510,
+      "payment": 100098
+    },
+    "deliveries_with_nothing_to_deliver": 134,
+    "engine_executions": 480,
+    "initial_keys": {
+      "1": 1831,
+      "4": 7324
+    },
+    "mean_committed": 451.4458333333333,
+    "mean_writes_per_committed_txn": 25.21537282988915,
+    "occ_abort_rate": 0.19366161869421322,
+    "occ_aborts_by_type": {
+      "delivery": 1278,
+      "new_order": 9144,
+      "payment": 12750
+    }
+  }
+}

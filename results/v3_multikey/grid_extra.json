@@ -1,0 +1,2642 @@
+{
+  "rmw_w1": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 2960,
+      "detected": 1272
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3334,
+      "correct_clean": 1074
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 4408,
+      "detected": 4232
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          2052
+        ],
+        "recall": [
+          828,
+          828
+        ]
+      },
+      "2": {
+        "false_bug": [
+          1199,
+          1199
+        ],
+        "recall": [
+          1681,
+          1681
+        ]
+      },
+      "4": {
+        "false_bug": [
+          1157,
+          1157
+        ],
+        "recall": [
+          1723,
+          1723
+        ]
+      }
+    },
+    "oracle_only_vs_history": 403,
+    "oracle_only_vs_single_log": 321,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          2356,
+          4408
+        ],
+        "recall": [
+          4232,
+          4232
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          4408
+        ],
+        "recall": [
+          3829,
+          4232
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          4408
+        ],
+        "recall": [
+          4232,
+          4232
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          820,
+          4408
+        ],
+        "recall": [
+          3911,
+          4232
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          314
+        ],
+        "oracle": [
+          314,
+          314
+        ],
+        "single_log_replay": [
+          0,
+          314
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          798,
+          798
+        ],
+        "oracle": [
+          798,
+          798
+        ],
+        "single_log_replay": [
+          798,
+          798
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1351,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1433,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "rmw_w3": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 4946,
+      "detected": 44
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3616,
+      "correct_clean": 34
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3650,
+      "detected": 4990
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1795
+        ],
+        "recall": [
+          1085,
+          1085
+        ]
+      },
+      "2": {
+        "false_bug": [
+          946,
+          946
+        ],
+        "recall": [
+          1934,
+          1934
+        ]
+      },
+      "4": {
+        "false_bug": [
+          909,
+          909
+        ],
+        "recall": [
+          1971,
+          1971
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1080,
+    "oracle_only_vs_single_log": 1052,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1855,
+          3650
+        ],
+        "recall": [
+          4990,
+          4990
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3650
+        ],
+        "recall": [
+          3910,
+          4990
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3650
+        ],
+        "recall": [
+          4990,
+          4990
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          2461,
+          3650
+        ],
+        "recall": [
+          3938,
+          4990
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1052
+        ],
+        "oracle": [
+          1052,
+          1052
+        ],
+        "single_log_replay": [
+          0,
+          1052
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          818,
+          818
+        ],
+        "oracle": [
+          818,
+          818
+        ],
+        "single_log_replay": [
+          818,
+          818
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1412,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "rmw_w5": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5254
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3386
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3386,
+      "detected": 5254
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1713
+        ],
+        "recall": [
+          1167,
+          1167
+        ]
+      },
+      "2": {
+        "false_bug": [
+          859,
+          859
+        ],
+        "recall": [
+          2021,
+          2021
+        ]
+      },
+      "4": {
+        "false_bug": [
+          814,
+          814
+        ],
+        "recall": [
+          2066,
+          2066
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1332,
+    "oracle_only_vs_single_log": 1320,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1673,
+          3386
+        ],
+        "recall": [
+          5254,
+          5254
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3386
+        ],
+        "recall": [
+          3922,
+          5254
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3386
+        ],
+        "recall": [
+          5254,
+          5254
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          3023,
+          3386
+        ],
+        "recall": [
+          3934,
+          5254
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1320
+        ],
+        "oracle": [
+          1320,
+          1320
+        ],
+        "single_log_replay": [
+          0,
+          1320
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          814,
+          814
+        ],
+        "oracle": [
+          814,
+          814
+        ],
+        "single_log_replay": [
+          814,
+          814
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1428,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "rmw_w8": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5313
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3327
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3327,
+      "detected": 5313
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1689
+        ],
+        "recall": [
+          1191,
+          1191
+        ]
+      },
+      "2": {
+        "false_bug": [
+          847,
+          847
+        ],
+        "recall": [
+          2033,
+          2033
+        ]
+      },
+      "4": {
+        "false_bug": [
+          791,
+          791
+        ],
+        "recall": [
+          2089,
+          2089
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1415,
+    "oracle_only_vs_single_log": 1405,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1638,
+          3327
+        ],
+        "recall": [
+          5313,
+          5313
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3327
+        ],
+        "recall": [
+          3898,
+          5313
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3327
+        ],
+        "recall": [
+          5313,
+          5313
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          3223,
+          3327
+        ],
+        "recall": [
+          3908,
+          5313
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1405
+        ],
+        "oracle": [
+          1405,
+          1405
+        ],
+        "single_log_replay": [
+          0,
+          1405
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          788,
+          788
+        ],
+        "oracle": [
+          788,
+          788
+        ],
+        "single_log_replay": [
+          788,
+          788
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1430,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w1_theta0.0": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 2564,
+      "detected": 1636
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 2824,
+      "correct_clean": 1616
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 4440,
+      "detected": 4200
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          2072
+        ],
+        "recall": [
+          808,
+          808
+        ]
+      },
+      "2": {
+        "false_bug": [
+          1200,
+          1200
+        ],
+        "recall": [
+          1680,
+          1680
+        ]
+      },
+      "4": {
+        "false_bug": [
+          1168,
+          1168
+        ],
+        "recall": [
+          1712,
+          1712
+        ]
+      }
+    },
+    "oracle_only_vs_history": 336,
+    "oracle_only_vs_single_log": 242,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          2368,
+          4440
+        ],
+        "recall": [
+          4200,
+          4200
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          4440
+        ],
+        "recall": [
+          3864,
+          4200
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          4440
+        ],
+        "recall": [
+          4200,
+          4200
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          574,
+          4440
+        ],
+        "recall": [
+          3958,
+          4200
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          228
+        ],
+        "oracle": [
+          228,
+          228
+        ],
+        "single_log_replay": [
+          0,
+          228
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          852,
+          852
+        ],
+        "oracle": [
+          852,
+          852
+        ],
+        "single_log_replay": [
+          852,
+          852
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1332,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1426,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w1_theta0.6": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 3822,
+      "detected": 616
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3672,
+      "correct_clean": 530
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 4202,
+      "detected": 4438
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1988
+        ],
+        "recall": [
+          892,
+          892
+        ]
+      },
+      "2": {
+        "false_bug": [
+          1124,
+          1124
+        ],
+        "recall": [
+          1756,
+          1756
+        ]
+      },
+      "4": {
+        "false_bug": [
+          1090,
+          1090
+        ],
+        "recall": [
+          1790,
+          1790
+        ]
+      }
+    },
+    "oracle_only_vs_history": 681,
+    "oracle_only_vs_single_log": 478,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          2214,
+          4202
+        ],
+        "recall": [
+          4438,
+          4438
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          4202
+        ],
+        "recall": [
+          3757,
+          4438
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          4202
+        ],
+        "recall": [
+          4438,
+          4438
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          1124,
+          4202
+        ],
+        "recall": [
+          3960,
+          4438
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          466
+        ],
+        "oracle": [
+          466,
+          466
+        ],
+        "single_log_replay": [
+          0,
+          466
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          852,
+          852
+        ],
+        "oracle": [
+          852,
+          852
+        ],
+        "single_log_replay": [
+          852,
+          852
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1225,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1428,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w1_theta0.99": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 4647,
+      "detected": 76
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3855,
+      "correct_clean": 62
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3917,
+      "detected": 4723
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1887
+        ],
+        "recall": [
+          993,
+          993
+        ]
+      },
+      "2": {
+        "false_bug": [
+          1028,
+          1028
+        ],
+        "recall": [
+          1848,
+          1852
+        ]
+      },
+      "4": {
+        "false_bug": [
+          1002,
+          1002
+        ],
+        "recall": [
+          1878,
+          1878
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1315,
+    "oracle_only_vs_single_log": 797,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          2030,
+          3917
+        ],
+        "recall": [
+          4719,
+          4723
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3917
+        ],
+        "recall": [
+          3408,
+          4723
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3917
+        ],
+        "recall": [
+          4723,
+          4723
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          1775,
+          3917
+        ],
+        "recall": [
+          3926,
+          4723
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          755
+        ],
+        "oracle": [
+          755,
+          755
+        ],
+        "single_log_replay": [
+          0,
+          755
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          848,
+          848
+        ],
+        "oracle": [
+          848,
+          848
+        ],
+        "single_log_replay": [
+          848,
+          848
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          880,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1398,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w3_theta0.0": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5029,
+      "detected": 4
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3605,
+      "correct_clean": 2
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3607,
+      "detected": 5033
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1779
+        ],
+        "recall": [
+          1101,
+          1101
+        ]
+      },
+      "2": {
+        "false_bug": [
+          942,
+          942
+        ],
+        "recall": [
+          1938,
+          1938
+        ]
+      },
+      "4": {
+        "false_bug": [
+          886,
+          886
+        ],
+        "recall": [
+          1994,
+          1994
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1142,
+    "oracle_only_vs_single_log": 1125,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1828,
+          3607
+        ],
+        "recall": [
+          5033,
+          5033
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3607
+        ],
+        "recall": [
+          3891,
+          5033
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3607
+        ],
+        "recall": [
+          5033,
+          5033
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          2626,
+          3607
+        ],
+        "recall": [
+          3908,
+          5033
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1125
+        ],
+        "oracle": [
+          1125,
+          1125
+        ],
+        "single_log_replay": [
+          0,
+          1125
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          788,
+          788
+        ],
+        "oracle": [
+          788,
+          788
+        ],
+        "single_log_replay": [
+          788,
+          788
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1423,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w3_theta0.6": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5180
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3460
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3460,
+      "detected": 5180
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1728
+        ],
+        "recall": [
+          1152,
+          1152
+        ]
+      },
+      "2": {
+        "false_bug": [
+          904,
+          904
+        ],
+        "recall": [
+          1976,
+          1976
+        ]
+      },
+      "4": {
+        "false_bug": [
+          828,
+          828
+        ],
+        "recall": [
+          2052,
+          2052
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1350,
+    "oracle_only_vs_single_log": 1280,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1732,
+          3460
+        ],
+        "recall": [
+          5180,
+          5180
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3460
+        ],
+        "recall": [
+          3830,
+          5180
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3460
+        ],
+        "recall": [
+          5180,
+          5180
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          2970,
+          3460
+        ],
+        "recall": [
+          3900,
+          5180
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1280
+        ],
+        "oracle": [
+          1280,
+          1280
+        ],
+        "single_log_replay": [
+          0,
+          1280
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          780,
+          780
+        ],
+        "oracle": [
+          780,
+          780
+        ],
+        "single_log_replay": [
+          780,
+          780
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1370,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w3_theta0.99": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5111
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3529
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3529,
+      "detected": 5111
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1743
+        ],
+        "recall": [
+          1137,
+          1137
+        ]
+      },
+      "2": {
+        "false_bug": [
+          931,
+          931
+        ],
+        "recall": [
+          1949,
+          1949
+        ]
+      },
+      "4": {
+        "false_bug": [
+          855,
+          855
+        ],
+        "recall": [
+          2025,
+          2025
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1509,
+    "oracle_only_vs_single_log": 1247,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1786,
+          3529
+        ],
+        "recall": [
+          5111,
+          5111
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3529
+        ],
+        "recall": [
+          3602,
+          5111
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3529
+        ],
+        "recall": [
+          5111,
+          5111
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          2910,
+          3529
+        ],
+        "recall": [
+          3864,
+          5111
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1247
+        ],
+        "oracle": [
+          1247,
+          1247
+        ],
+        "single_log_replay": [
+          0,
+          1247
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          744,
+          744
+        ],
+        "oracle": [
+          744,
+          744
+        ],
+        "single_log_replay": [
+          744,
+          744
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1178,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w5_theta0.0": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5255
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3385
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3385,
+      "detected": 5255
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1716
+        ],
+        "recall": [
+          1164,
+          1164
+        ]
+      },
+      "2": {
+        "false_bug": [
+          853,
+          853
+        ],
+        "recall": [
+          2027,
+          2027
+        ]
+      },
+      "4": {
+        "false_bug": [
+          816,
+          816
+        ],
+        "recall": [
+          2064,
+          2064
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1314,
+    "oracle_only_vs_single_log": 1307,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1669,
+          3385
+        ],
+        "recall": [
+          5255,
+          5255
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3385
+        ],
+        "recall": [
+          3941,
+          5255
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3385
+        ],
+        "recall": [
+          5255,
+          5255
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          2988,
+          3385
+        ],
+        "recall": [
+          3948,
+          5255
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1307
+        ],
+        "oracle": [
+          1307,
+          1307
+        ],
+        "single_log_replay": [
+          0,
+          1307
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          828,
+          828
+        ],
+        "oracle": [
+          828,
+          828
+        ],
+        "single_log_replay": [
+          828,
+          828
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1433,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w5_theta0.6": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5266
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3374
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3374,
+      "detected": 5266
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1698
+        ],
+        "recall": [
+          1182,
+          1182
+        ]
+      },
+      "2": {
+        "false_bug": [
+          858,
+          858
+        ],
+        "recall": [
+          2022,
+          2022
+        ]
+      },
+      "4": {
+        "false_bug": [
+          818,
+          818
+        ],
+        "recall": [
+          2062,
+          2062
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1403,
+    "oracle_only_vs_single_log": 1368,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1676,
+          3374
+        ],
+        "recall": [
+          5266,
+          5266
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3374
+        ],
+        "recall": [
+          3863,
+          5266
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3374
+        ],
+        "recall": [
+          5266,
+          5266
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          3169,
+          3374
+        ],
+        "recall": [
+          3898,
+          5266
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1368
+        ],
+        "oracle": [
+          1368,
+          1368
+        ],
+        "single_log_replay": [
+          0,
+          1368
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          778,
+          778
+        ],
+        "oracle": [
+          778,
+          778
+        ],
+        "single_log_replay": [
+          778,
+          778
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1405,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w5_theta0.99": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5235,
+      "detected": 12
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3381,
+      "correct_clean": 12
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3393,
+      "detected": 5247
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1693
+        ],
+        "recall": [
+          1187,
+          1187
+        ]
+      },
+      "2": {
+        "false_bug": [
+          865,
+          865
+        ],
+        "recall": [
+          2015,
+          2015
+        ]
+      },
+      "4": {
+        "false_bug": [
+          835,
+          835
+        ],
+        "recall": [
+          2045,
+          2045
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1475,
+    "oracle_only_vs_single_log": 1364,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1700,
+          3393
+        ],
+        "recall": [
+          5247,
+          5247
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3393
+        ],
+        "recall": [
+          3772,
+          5247
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3393
+        ],
+        "recall": [
+          5247,
+          5247
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          3182,
+          3393
+        ],
+        "recall": [
+          3883,
+          5247
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1363
+        ],
+        "oracle": [
+          1363,
+          1363
+        ],
+        "single_log_replay": [
+          0,
+          1363
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          764,
+          764
+        ],
+        "oracle": [
+          764,
+          764
+        ],
+        "single_log_replay": [
+          764,
+          764
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1328,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1439,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w8_theta0.0": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5359
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3281
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3281,
+      "detected": 5359
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1680
+        ],
+        "recall": [
+          1200,
+          1200
+        ]
+      },
+      "2": {
+        "false_bug": [
+          839,
+          839
+        ],
+        "recall": [
+          2041,
+          2041
+        ]
+      },
+      "4": {
+        "false_bug": [
+          762,
+          762
+        ],
+        "recall": [
+          2118,
+          2118
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1450,
+    "oracle_only_vs_single_log": 1437,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1601,
+          3281
+        ],
+        "recall": [
+          5359,
+          5359
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3281
+        ],
+        "recall": [
+          3909,
+          5359
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3281
+        ],
+        "recall": [
+          5359,
+          5359
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          3275,
+          3281
+        ],
+        "recall": [
+          3922,
+          5359
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1437
+        ],
+        "oracle": [
+          1437,
+          1437
+        ],
+        "single_log_replay": [
+          0,
+          1437
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          802,
+          802
+        ],
+        "oracle": [
+          802,
+          802
+        ],
+        "single_log_replay": [
+          802,
+          802
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1427,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w8_theta0.6": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5311
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3329
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3329,
+      "detected": 5311
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1685
+        ],
+        "recall": [
+          1195,
+          1195
+        ]
+      },
+      "2": {
+        "false_bug": [
+          865,
+          865
+        ],
+        "recall": [
+          2015,
+          2015
+        ]
+      },
+      "4": {
+        "false_bug": [
+          779,
+          779
+        ],
+        "recall": [
+          2101,
+          2101
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1447,
+    "oracle_only_vs_single_log": 1419,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1644,
+          3329
+        ],
+        "recall": [
+          5311,
+          5311
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3329
+        ],
+        "recall": [
+          3864,
+          5311
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3329
+        ],
+        "recall": [
+          5311,
+          5311
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          3265,
+          3329
+        ],
+        "recall": [
+          3892,
+          5311
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1419
+        ],
+        "oracle": [
+          1419,
+          1419
+        ],
+        "single_log_replay": [
+          0,
+          1419
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          772,
+          772
+        ],
+        "oracle": [
+          772,
+          772
+        ],
+        "single_log_replay": [
+          772,
+          772
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1412,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  },
+  "ycsb_w8_theta0.99": {
+    "degraded_oracle_outcomes_buggy": {
+      "abstained": 5175,
+      "detected": 16
+    },
+    "degraded_oracle_outcomes_clean": {
+      "abstained_clean": 3429,
+      "correct_clean": 20
+    },
+    "full_adapter_oracle_outcomes": {
+      "correct_clean": 3449,
+      "detected": 5191
+    },
+    "history_only_vs_oracle": 0,
+    "n_degraded": 8640,
+    "n_full": 8640,
+    "no_crash_diff_by_drop_last": {
+      "0": {
+        "false_bug": [
+          0,
+          1700
+        ],
+        "recall": [
+          1180,
+          1180
+        ]
+      },
+      "2": {
+        "false_bug": [
+          897,
+          897
+        ],
+        "recall": [
+          1983,
+          1983
+        ]
+      },
+      "4": {
+        "false_bug": [
+          852,
+          852
+        ],
+        "recall": [
+          2028,
+          2028
+        ]
+      }
+    },
+    "oracle_only_vs_history": 1417,
+    "oracle_only_vs_single_log": 1363,
+    "overall": {
+      "crash_no_crash_diff": {
+        "false_bug": [
+          1749,
+          3449
+        ],
+        "recall": [
+          5191,
+          5191
+        ]
+      },
+      "history_acceptor": {
+        "false_bug": [
+          0,
+          3449
+        ],
+        "recall": [
+          3774,
+          5191
+        ]
+      },
+      "oracle": {
+        "false_bug": [
+          0,
+          3449
+        ],
+        "recall": [
+          5191,
+          5191
+        ]
+      },
+      "single_log_replay": {
+        "false_bug": [
+          3203,
+          3449
+        ],
+        "recall": [
+          3828,
+          5191
+        ]
+      }
+    },
+    "per_fault_detected_of_buggy": {
+      "flat_order": {
+        "history_acceptor": [
+          0,
+          1363
+        ],
+        "oracle": [
+          1363,
+          1363
+        ],
+        "single_log_replay": [
+          0,
+          1363
+        ]
+      },
+      "ignore_validation": {
+        "history_acceptor": [
+          708,
+          708
+        ],
+        "oracle": [
+          708,
+          708
+        ],
+        "single_log_replay": [
+          708,
+          708
+        ]
+      },
+      "stale_checkpoint_noreapply": {
+        "history_acceptor": [
+          720,
+          720
+        ],
+        "oracle": [
+          720,
+          720
+        ],
+        "single_log_replay": [
+          720,
+          720
+        ]
+      },
+      "torn_commit_include": {
+        "history_acceptor": [
+          960,
+          960
+        ],
+        "oracle": [
+          960,
+          960
+        ],
+        "single_log_replay": [
+          960,
+          960
+        ]
+      },
+      "truncate_suffix": {
+        "history_acceptor": [
+          1386,
+          1440
+        ],
+        "oracle": [
+          1440,
+          1440
+        ],
+        "single_log_replay": [
+          1440,
+          1440
+        ]
+      }
+    },
+    "single_log_only_vs_oracle": 0
+  }
+}

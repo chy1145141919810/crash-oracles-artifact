@@ -1,0 +1,158 @@
+{
+  "checkers": {
+    "history_acceptor": {
+      "buggy": {
+        "abstained": 0,
+        "detected": 3208,
+        "missed": 1772
+      },
+      "clean": {
+        "abstained": 0,
+        "correct": 6540,
+        "false_bug": 0
+      },
+      "false_bug_rate": 0.0,
+      "raw_verdicts": {
+        "match": 8312,
+        "mismatch": 3208
+      },
+      "recall": 0.6441767068273092
+    },
+    "oracle": {
+      "buggy": {
+        "abstained": 0,
+        "detected": 4980,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 0,
+        "correct": 6540,
+        "false_bug": 0
+      },
+      "false_bug_rate": 0.0,
+      "raw_verdicts": {
+        "match": 6540,
+        "mismatch": 4980
+      },
+      "recall": 1.0
+    },
+    "oracle_detorder_only": {
+      "buggy": {
+        "abstained": 4947,
+        "detected": 33,
+        "missed": 0
+      },
+      "clean": {
+        "abstained": 6267,
+        "correct": 273,
+        "false_bug": 0
+      },
+      "false_bug_rate": 0.0,
+      "raw_verdicts": {
+        "match": 273,
+        "mismatch": 33,
+        "uncertain": 11214
+      },
+      "recall": 0.006626506024096385
+    },
+    "single_log_replay": {
+      "buggy": {
+        "abstained": 0,
+        "detected": 3216,
+        "missed": 1764
+      },
+      "clean": {
+        "abstained": 0,
+        "correct": 734,
+        "false_bug": 5806
+      },
+      "false_bug_rate": 0.8877675840978593,
+      "raw_verdicts": {
+        "match": 2498,
+        "mismatch": 9022
+      },
+      "recall": 0.6457831325301204
+    }
+  },
+  "clean_recovery_differs_from_truth": 0,
+  "config": {
+    "n": 48,
+    "seeds": 40,
+    "theta": null,
+    "workload": "rmw",
+    "writes_per_txn": 8
+  },
+  "crash_steps": {
+    "0": 480,
+    "1": 268,
+    "2": 244,
+    "3": 277,
+    "4": 235,
+    "5": 292,
+    "6": 52,
+    "7": 37,
+    "8": 33
+  },
+  "dirs_with_checkpoint": 843,
+  "dirs_with_leftover_ckpt_tmp": 89,
+  "dirs_with_torn_tail": 268,
+  "engine_exit_codes": {
+    "-9": 1438,
+    "0": 480
+  },
+  "jobs": 22,
+  "kill_not_as_expected": 0,
+  "n_buggy": 4980,
+  "n_clean": 6540,
+  "n_engine_processes": 1918,
+  "n_recovery_runs": 11520,
+  "oracle_us_under_parallel_load": {
+    "mean": 450.13,
+    "p95": 538.09
+  },
+  "per_fault": {
+    "clean": {
+      "history_acceptor": 0,
+      "n": 1920,
+      "n_buggy": 0,
+      "oracle": 0,
+      "single_log_replay": 0
+    },
+    "flat_order": {
+      "history_acceptor": 0,
+      "n": 1920,
+      "n_buggy": 1764,
+      "oracle": 1764,
+      "single_log_replay": 0
+    },
+    "ignore_validation": {
+      "history_acceptor": 112,
+      "n": 1920,
+      "n_buggy": 112,
+      "oracle": 112,
+      "single_log_replay": 112
+    },
+    "stale_checkpoint_noreapply": {
+      "history_acceptor": 809,
+      "n": 1920,
+      "n_buggy": 809,
+      "oracle": 809,
+      "single_log_replay": 809
+    },
+    "torn_commit_include": {
+      "history_acceptor": 410,
+      "n": 1920,
+      "n_buggy": 410,
+      "oracle": 410,
+      "single_log_replay": 410
+    },
+    "truncate_suffix": {
+      "history_acceptor": 1877,
+      "n": 1920,
+      "n_buggy": 1885,
+      "oracle": 1885,
+      "single_log_replay": 1885
+    }
+  },
+  "wall_s": 32.0
+}

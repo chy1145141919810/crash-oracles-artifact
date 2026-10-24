@@ -1,0 +1,3250 @@
+{
+ "across_configs": {
+  "all": {
+   "min_txns_max": 7,
+   "min_txns_median": [
+    1.0
+   ],
+   "min_txns_q1": [
+    1.0
+   ],
+   "min_txns_q3": [
+    2.0
+   ],
+   "ms_max": 176.3,
+   "ms_median_range": [
+    9.1,
+    9.4
+   ],
+   "ms_q3_max": 48.9,
+   "n": 8000,
+   "one_minimal": 7999,
+   "still_mismatch": 8000,
+   "still_truly_buggy": 8000,
+   "tests_median_range": [
+    17.0,
+    26.0
+   ]
+  },
+  "flat_order": {
+   "min_txns_max": 7,
+   "min_txns_median": [
+    2.0,
+    3.0
+   ],
+   "min_txns_q1": [
+    2.0
+   ],
+   "min_txns_q3": [
+    3.0
+   ],
+   "ms_max": 176.3,
+   "ms_median_range": [
+    23.4,
+    36.5
+   ],
+   "ms_q3_max": 101.7,
+   "n": 1600,
+   "one_minimal": 1599,
+   "still_mismatch": 1600,
+   "still_truly_buggy": 1600,
+   "tests_median_range": [
+    42.0,
+    64.5
+   ]
+  },
+  "ignore_validation": {
+   "min_txns_max": 4,
+   "min_txns_median": [
+    1.0
+   ],
+   "min_txns_q1": [
+    1.0
+   ],
+   "min_txns_q3": [
+    1.0,
+    1.25,
+    2.0
+   ],
+   "ms_max": 11.1,
+   "ms_median_range": [
+    5.7,
+    6.5
+   ],
+   "ms_q3_max": 7.2,
+   "n": 1600,
+   "one_minimal": 1600,
+   "still_mismatch": 1600,
+   "still_truly_buggy": 1600,
+   "tests_median_range": [
+    15.0,
+    23.5
+   ]
+  },
+  "stale_checkpoint_noreapply": {
+   "min_txns_max": 2,
+   "min_txns_median": [
+    2.0
+   ],
+   "min_txns_q1": [
+    2.0
+   ],
+   "min_txns_q3": [
+    2.0
+   ],
+   "ms_max": 138.3,
+   "ms_median_range": [
+    49.3,
+    78.3
+   ],
+   "ms_q3_max": 88.2,
+   "n": 1600,
+   "one_minimal": 1600,
+   "still_mismatch": 1600,
+   "still_truly_buggy": 1600,
+   "tests_median_range": [
+    83.0,
+    122.0
+   ]
+  },
+  "torn_commit_include": {
+   "min_txns_max": 1,
+   "min_txns_median": [
+    1.0
+   ],
+   "min_txns_q1": [
+    1.0
+   ],
+   "min_txns_q3": [
+    1.0
+   ],
+   "ms_max": 6.1,
+   "ms_median_range": [
+    5.6,
+    5.7
+   ],
+   "ms_q3_max": 5.8,
+   "n": 1600,
+   "one_minimal": 1600,
+   "still_mismatch": 1600,
+   "still_truly_buggy": 1600,
+   "tests_median_range": [
+    14.0,
+    14.0
+   ]
+  },
+  "truncate_suffix": {
+   "min_txns_max": 1,
+   "min_txns_median": [
+    1.0
+   ],
+   "min_txns_q1": [
+    1.0
+   ],
+   "min_txns_q3": [
+    1.0
+   ],
+   "ms_max": 20.6,
+   "ms_median_range": [
+    9.1,
+    9.4
+   ],
+   "ms_q3_max": 13.5,
+   "n": 1600,
+   "one_minimal": 1600,
+   "still_mismatch": 1600,
+   "still_truly_buggy": 1600,
+   "tests_median_range": [
+    16.0,
+    17.0
+   ]
+  },
+  "witness_rows_identical_to_parallel_run_except_time": "8 of 8 configs"
+ },
+ "per_config": {
+  "rmw_w1": {
+   "config": {
+    "n": 48,
+    "per_fault_cap": 200,
+    "seeds": 40,
+    "theta": null,
+    "workload": "rmw",
+    "writes_per_txn": 1
+   },
+   "mismatch_runs_available": {
+    "flat_order": 314,
+    "ignore_validation": 798,
+    "stale_checkpoint_noreapply": 720,
+    "torn_commit_include": 960,
+    "truncate_suffix": 1440
+   },
+   "per_fault": {
+    "all": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 173.75,
+      "median": 9.3,
+      "min": 3.4,
+      "q1": 5.69,
+      "q3": 42.33
+     },
+     "n_minimized": 1000,
+     "one_minimal": 1000,
+     "orig_diff_keys": {
+      "max": 32,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 1000,
+     "still_truly_buggy": 1000,
+     "tests": {
+      "max": 249,
+      "median": 24.5,
+      "min": 6,
+      "q1": 14.0,
+      "q3": 77.0
+     },
+     "top_shapes": {
+      "do|ckpt=0|cut=0": 116,
+      "d|ckpt=0|cut=1": 98,
+      "o|ckpt=0|cut=0": 102,
+      "o|ckpt=0|cut=1": 273
+     }
+    },
+    "flat_order": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 2,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 3.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 173.75,
+      "median": 30.22,
+      "min": 9.47,
+      "q1": 22.767500000000002,
+      "q3": 42.33
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 249,
+      "median": 53.5,
+      "min": 17,
+      "q1": 41.0,
+      "q3": 77.0
+     },
+     "top_shapes": {
+      "ddoo|ckpt=0|cut=2": 2,
+      "ddo|ckpt=0|cut=0": 82,
+      "do|ckpt=0|cut=0": 116
+     }
+    },
+    "ignore_validation": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 11.06,
+      "median": 6.38,
+      "min": 5.04,
+      "q1": 6.2075,
+      "q3": 7.04
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 51,
+      "median": 23.0,
+      "min": 14,
+      "q1": 15.0,
+      "q3": 24.0
+     },
+     "top_shapes": {
+      "dddo|ckpt=0|cut=4": 5,
+      "ddo|ckpt=0|cut=3": 9,
+      "do|ckpt=0|cut=2": 15,
+      "o|ckpt=0|cut=1": 171
+     }
+    },
+    "stale_checkpoint_noreapply": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 2,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 58.41,
+      "median": 49.47,
+      "min": 47.88,
+      "q1": 49.08,
+      "q3": 50.0125
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 32,
+      "median": 31.0,
+      "min": 28,
+      "q1": 30.0,
+      "q3": 32.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 99,
+      "median": 83.0,
+      "min": 83,
+      "q1": 83.0,
+      "q3": 83.0
+     },
+     "top_shapes": {
+      "dd|ckpt=1|cut=0": 54,
+      "do|ckpt=1|cut=0": 89,
+      "oo|ckpt=1|cut=0": 57
+     }
+    },
+    "torn_commit_include": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 5.75,
+      "median": 5.63,
+      "min": 5.44,
+      "q1": 5.53,
+      "q3": 5.68
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 15,
+      "median": 14.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 14.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=1": 98,
+      "o|ckpt=0|cut=1": 102
+     }
+    },
+    "truncate_suffix": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 13.67,
+      "median": 9.065000000000001,
+      "min": 3.4,
+      "q1": 4.1725,
+      "q3": 12.4975
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 26,
+      "median": 16.0,
+      "min": 6,
+      "q1": 7.0,
+      "q3": 25.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 98,
+      "o|ckpt=0|cut=0": 102
+     }
+    }
+   }
+  },
+  "rmw_w3": {
+   "config": {
+    "n": 48,
+    "per_fault_cap": 200,
+    "seeds": 40,
+    "theta": null,
+    "workload": "rmw",
+    "writes_per_txn": 3
+   },
+   "mismatch_runs_available": {
+    "flat_order": 1052,
+    "ignore_validation": 818,
+    "stale_checkpoint_noreapply": 720,
+    "torn_commit_include": 960,
+    "truncate_suffix": 1440
+   },
+   "per_fault": {
+    "all": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 1,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 167.56,
+      "median": 9.2,
+      "min": 3.39,
+      "q1": 5.6775,
+      "q3": 48.9325
+     },
+     "n_minimized": 1000,
+     "one_minimal": 1000,
+     "orig_diff_keys": {
+      "max": 93,
+      "median": 3.0,
+      "min": 1,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 1000,
+     "still_truly_buggy": 1000,
+     "tests": {
+      "max": 238,
+      "median": 19.0,
+      "min": 6,
+      "q1": 14.0,
+      "q3": 83.0
+     },
+     "top_shapes": {
+      "do|ckpt=0|cut=0": 112,
+      "d|ckpt=0|cut=0": 103,
+      "d|ckpt=0|cut=1": 104,
+      "o|ckpt=0|cut=1": 255
+     }
+    },
+    "flat_order": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 3,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 3.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 167.56,
+      "median": 36.465,
+      "min": 9.55,
+      "q1": 25.412499999999998,
+      "q3": 101.745
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 8,
+      "median": 2.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 3.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 238,
+      "median": 64.5,
+      "min": 17,
+      "q1": 45.0,
+      "q3": 149.0
+     },
+     "top_shapes": {
+      "ddo|ckpt=0|cut=0": 88,
+      "do|ckpt=0|cut=0": 112
+     }
+    },
+    "ignore_validation": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 10.37,
+      "median": 6.15,
+      "min": 5.05,
+      "q1": 5.71,
+      "q3": 6.38
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 50,
+      "median": 15.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 16.0
+     },
+     "top_shapes": {
+      "dddo|ckpt=0|cut=4": 5,
+      "ddo|ckpt=0|cut=3": 8,
+      "do|ckpt=0|cut=2": 28,
+      "o|ckpt=0|cut=1": 159
+     }
+    },
+    "stale_checkpoint_noreapply": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 2,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 68.0,
+      "median": 50.255,
+      "min": 48.03,
+      "q1": 49.5675,
+      "q3": 51.162499999999994
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 93,
+      "median": 85.0,
+      "min": 68,
+      "q1": 83.0,
+      "q3": 87.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 113,
+      "median": 83.0,
+      "min": 83,
+      "q1": 83.0,
+      "q3": 85.0
+     },
+     "top_shapes": {
+      "dd|ckpt=1|cut=0": 57,
+      "do|ckpt=1|cut=0": 87,
+      "oo|ckpt=1|cut=0": 56
+     }
+    },
+    "torn_commit_include": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 5.75,
+      "median": 5.64,
+      "min": 5.46,
+      "q1": 5.547499999999999,
+      "q3": 5.68
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 15,
+      "median": 14.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 14.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=1": 104,
+      "o|ckpt=0|cut=1": 96
+     }
+    },
+    "truncate_suffix": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 13.76,
+      "median": 9.06,
+      "min": 3.39,
+      "q1": 4.1225000000000005,
+      "q3": 12.53
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 28,
+      "median": 16.5,
+      "min": 6,
+      "q1": 7.0,
+      "q3": 25.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 103,
+      "o|ckpt=0|cut=0": 97
+     }
+    }
+   }
+  },
+  "rmw_w5": {
+   "config": {
+    "n": 48,
+    "per_fault_cap": 200,
+    "seeds": 40,
+    "theta": null,
+    "workload": "rmw",
+    "writes_per_txn": 5
+   },
+   "mismatch_runs_available": {
+    "flat_order": 1320,
+    "ignore_validation": 814,
+    "stale_checkpoint_noreapply": 720,
+    "torn_commit_include": 960,
+    "truncate_suffix": 1440
+   },
+   "per_fault": {
+    "all": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 1,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 5,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 174.78,
+      "median": 9.32,
+      "min": 3.47,
+      "q1": 5.74,
+      "q3": 38.3075
+     },
+     "n_minimized": 1000,
+     "one_minimal": 1000,
+     "orig_diff_keys": {
+      "max": 143,
+      "median": 5.0,
+      "min": 1,
+      "q1": 5.0,
+      "q3": 6.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 1000,
+     "still_truly_buggy": 1000,
+     "tests": {
+      "max": 244,
+      "median": 17.0,
+      "min": 6,
+      "q1": 14.0,
+      "q3": 66.25
+     },
+     "top_shapes": {
+      "do|ckpt=0|cut=0": 114,
+      "d|ckpt=0|cut=1": 95,
+      "o|ckpt=0|cut=0": 109,
+      "o|ckpt=0|cut=1": 275
+     }
+    },
+    "flat_order": {
+     "min_diff_keys": {
+      "max": 2,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 3,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 5,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 3.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 174.78,
+      "median": 29.235,
+      "min": 8.39,
+      "q1": 21.87,
+      "q3": 38.3075
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 16,
+      "median": 4.0,
+      "min": 1,
+      "q1": 2.0,
+      "q3": 6.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 244,
+      "median": 52.0,
+      "min": 15,
+      "q1": 39.0,
+      "q3": 66.25
+     },
+     "top_shapes": {
+      "dddoo|ckpt=0|cut=3": 1,
+      "ddo|ckpt=0|cut=0": 85,
+      "do|ckpt=0|cut=0": 114
+     }
+    },
+    "ignore_validation": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 10.0,
+      "median": 6.225,
+      "min": 5.13,
+      "q1": 5.7475000000000005,
+      "q3": 6.41
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 52,
+      "median": 15.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 16.0
+     },
+     "top_shapes": {
+      "dddo|ckpt=0|cut=4": 5,
+      "ddo|ckpt=0|cut=3": 8,
+      "do|ckpt=0|cut=2": 17,
+      "o|ckpt=0|cut=1": 170
+     }
+    },
+    "stale_checkpoint_noreapply": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 2,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 73.33,
+      "median": 51.84,
+      "min": 50.1,
+      "q1": 51.207499999999996,
+      "q3": 55.894999999999996
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 143,
+      "median": 127.0,
+      "min": 114,
+      "q1": 124.0,
+      "q3": 132.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 117,
+      "median": 83.0,
+      "min": 83,
+      "q1": 83.0,
+      "q3": 90.0
+     },
+     "top_shapes": {
+      "dd|ckpt=1|cut=0": 59,
+      "do|ckpt=1|cut=0": 95,
+      "oo|ckpt=1|cut=0": 46
+     }
+    },
+    "torn_commit_include": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 5.82,
+      "median": 5.71,
+      "min": 5.52,
+      "q1": 5.61,
+      "q3": 5.76
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 15,
+      "median": 14.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 14.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=1": 95,
+      "o|ckpt=0|cut=1": 105
+     }
+    },
+    "truncate_suffix": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 15.39,
+      "median": 9.23,
+      "min": 3.47,
+      "q1": 4.2325,
+      "q3": 12.77
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 30,
+      "median": 16.5,
+      "min": 6,
+      "q1": 7.0,
+      "q3": 25.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 91,
+      "o|ckpt=0|cut=0": 109
+     }
+    }
+   }
+  },
+  "rmw_w8": {
+   "config": {
+    "n": 48,
+    "per_fault_cap": 200,
+    "seeds": 40,
+    "theta": null,
+    "workload": "rmw",
+    "writes_per_txn": 8
+   },
+   "mismatch_runs_available": {
+    "flat_order": 1405,
+    "ignore_validation": 788,
+    "stale_checkpoint_noreapply": 720,
+    "torn_commit_include": 960,
+    "truncate_suffix": 1440
+   },
+   "per_fault": {
+    "all": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 1,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 174.04,
+      "median": 9.32,
+      "min": 3.47,
+      "q1": 5.78,
+      "q3": 36.54
+     },
+     "n_minimized": 1000,
+     "one_minimal": 1000,
+     "orig_diff_keys": {
+      "max": 199,
+      "median": 8.0,
+      "min": 1,
+      "q1": 8.0,
+      "q3": 11.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 1000,
+     "still_truly_buggy": 1000,
+     "tests": {
+      "max": 246,
+      "median": 25.0,
+      "min": 6,
+      "q1": 14.0,
+      "q3": 66.0
+     },
+     "top_shapes": {
+      "do|ckpt=0|cut=0": 103,
+      "d|ckpt=0|cut=0": 106,
+      "d|ckpt=0|cut=1": 97,
+      "o|ckpt=0|cut=1": 268
+     }
+    },
+    "flat_order": {
+     "min_diff_keys": {
+      "max": 2,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 3.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 174.04,
+      "median": 27.65,
+      "min": 8.85,
+      "q1": 20.284999999999997,
+      "q3": 36.54
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 20,
+      "median": 8.0,
+      "min": 1,
+      "q1": 4.75,
+      "q3": 11.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 246,
+      "median": 48.5,
+      "min": 16,
+      "q1": 36.0,
+      "q3": 66.0
+     },
+     "top_shapes": {
+      "dddddoo|ckpt=0|cut=4": 1,
+      "dddoo|ckpt=0|cut=2": 1,
+      "ddo|ckpt=0|cut=0": 95,
+      "do|ckpt=0|cut=0": 103
+     }
+    },
+    "ignore_validation": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 11.12,
+      "median": 6.485,
+      "min": 5.2,
+      "q1": 6.2125,
+      "q3": 7.1425
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 51,
+      "median": 23.0,
+      "min": 14,
+      "q1": 15.0,
+      "q3": 25.0
+     },
+     "top_shapes": {
+      "dddo|ckpt=0|cut=4": 4,
+      "ddo|ckpt=0|cut=3": 7,
+      "do|ckpt=0|cut=2": 24,
+      "o|ckpt=0|cut=1": 165
+     }
+    },
+    "stale_checkpoint_noreapply": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 2,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 89.13,
+      "median": 55.489999999999995,
+      "min": 50.34,
+      "q1": 52.6125,
+      "q3": 61.4075
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 199,
+      "median": 179.0,
+      "min": 132,
+      "q1": 173.0,
+      "q3": 185.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 139,
+      "median": 88.5,
+      "min": 83,
+      "q1": 83.0,
+      "q3": 97.0
+     },
+     "top_shapes": {
+      "dd|ckpt=1|cut=0": 59,
+      "do|ckpt=1|cut=0": 80,
+      "oo|ckpt=1|cut=0": 61
+     }
+    },
+    "torn_commit_include": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 5.85,
+      "median": 5.74,
+      "min": 5.58,
+      "q1": 5.65,
+      "q3": 5.78
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 16,
+      "median": 14.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 14.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=1": 97,
+      "o|ckpt=0|cut=1": 103
+     }
+    },
+    "truncate_suffix": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 20.55,
+      "median": 9.29,
+      "min": 3.47,
+      "q1": 4.2025,
+      "q3": 12.704999999999998
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 36,
+      "median": 17.0,
+      "min": 6,
+      "q1": 7.0,
+      "q3": 25.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 106,
+      "o|ckpt=0|cut=0": 94
+     }
+    }
+   }
+  },
+  "ycsb_w1_theta0.99": {
+   "config": {
+    "n": 48,
+    "per_fault_cap": 200,
+    "seeds": 40,
+    "theta": 0.99,
+    "workload": "ycsb",
+    "writes_per_txn": 1
+   },
+   "mismatch_runs_available": {
+    "flat_order": 755,
+    "ignore_validation": 848,
+    "stale_checkpoint_noreapply": 720,
+    "torn_commit_include": 960,
+    "truncate_suffix": 1440
+   },
+   "per_fault": {
+    "all": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 161.34,
+      "median": 9.13,
+      "min": 3.31,
+      "q1": 5.6,
+      "q3": 47.895
+     },
+     "n_minimized": 1000,
+     "one_minimal": 1000,
+     "orig_diff_keys": {
+      "max": 31,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 1000,
+     "still_truly_buggy": 1000,
+     "tests": {
+      "max": 238,
+      "median": 19.0,
+      "min": 6,
+      "q1": 14.0,
+      "q3": 83.0
+     },
+     "top_shapes": {
+      "ddo|ckpt=0|cut=0": 102,
+      "d|ckpt=0|cut=0": 103,
+      "d|ckpt=0|cut=1": 98,
+      "o|ckpt=0|cut=1": 265
+     }
+    },
+    "flat_order": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 3.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 3.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 161.34,
+      "median": 33.81,
+      "min": 11.61,
+      "q1": 24.7325,
+      "q3": 95.41000000000001
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 3,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 238,
+      "median": 61.0,
+      "min": 21,
+      "q1": 45.0,
+      "q3": 140.75
+     },
+     "top_shapes": {
+      "dddddoo|ckpt=0|cut=4": 1,
+      "ddoo|ckpt=0|cut=2": 2,
+      "ddo|ckpt=0|cut=0": 102,
+      "do|ckpt=0|cut=0": 93
+     }
+    },
+    "ignore_validation": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 10.13,
+      "median": 5.67,
+      "min": 5.02,
+      "q1": 5.53,
+      "q3": 6.172499999999999
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 50,
+      "median": 15.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 16.0
+     },
+     "top_shapes": {
+      "dddo|ckpt=0|cut=4": 6,
+      "ddo|ckpt=0|cut=3": 5,
+      "do|ckpt=0|cut=2": 26,
+      "o|ckpt=0|cut=1": 163
+     }
+    },
+    "stale_checkpoint_noreapply": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 2,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 59.78,
+      "median": 49.34,
+      "min": 47.15,
+      "q1": 48.5175,
+      "q3": 49.63250000000001
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 31,
+      "median": 23.0,
+      "min": 16,
+      "q1": 21.0,
+      "q3": 25.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 100,
+      "median": 83.0,
+      "min": 83,
+      "q1": 83.0,
+      "q3": 83.0
+     },
+     "top_shapes": {
+      "dd|ckpt=1|cut=0": 46,
+      "do|ckpt=1|cut=0": 96,
+      "oo|ckpt=1|cut=0": 58
+     }
+    },
+    "torn_commit_include": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 5.67,
+      "median": 5.585,
+      "min": 5.41,
+      "q1": 5.51,
+      "q3": 5.62
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 15,
+      "median": 14.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 14.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=1": 98,
+      "o|ckpt=0|cut=1": 102
+     }
+    },
+    "truncate_suffix": {
+     "min_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 16.74,
+      "median": 9.114999999999998,
+      "min": 3.31,
+      "q1": 4.0725,
+      "q3": 12.41
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 30,
+      "median": 17.0,
+      "min": 6,
+      "q1": 7.0,
+      "q3": 25.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 103,
+      "o|ckpt=0|cut=0": 97
+     }
+    }
+   }
+  },
+  "ycsb_w3_theta0.99": {
+   "config": {
+    "n": 48,
+    "per_fault_cap": 200,
+    "seeds": 40,
+    "theta": 0.99,
+    "workload": "ycsb",
+    "writes_per_txn": 3
+   },
+   "mismatch_runs_available": {
+    "flat_order": 1247,
+    "ignore_validation": 744,
+    "stale_checkpoint_noreapply": 720,
+    "torn_commit_include": 960,
+    "truncate_suffix": 1440
+   },
+   "per_fault": {
+    "all": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 1,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 163.84,
+      "median": 9.364999999999998,
+      "min": 3.37,
+      "q1": 5.69,
+      "q3": 35.2125
+     },
+     "n_minimized": 1000,
+     "one_minimal": 999,
+     "orig_diff_keys": {
+      "max": 67,
+      "median": 3.0,
+      "min": 1,
+      "q1": 3.0,
+      "q3": 4.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 1000,
+     "still_truly_buggy": 1000,
+     "tests": {
+      "max": 235,
+      "median": 25.0,
+      "min": 6,
+      "q1": 14.0,
+      "q3": 64.25
+     },
+     "top_shapes": {
+      "ddo|ckpt=0|cut=0": 92,
+      "d|ckpt=0|cut=0": 115,
+      "d|ckpt=0|cut=1": 118,
+      "o|ckpt=0|cut=1": 232
+     }
+    },
+    "flat_order": {
+     "min_diff_keys": {
+      "max": 2,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 3.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 3.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 163.84,
+      "median": 25.875,
+      "min": 9.76,
+      "q1": 18.3975,
+      "q3": 35.2125
+     },
+     "n_minimized": 200,
+     "one_minimal": 199,
+     "orig_diff_keys": {
+      "max": 9,
+      "median": 3.0,
+      "min": 1,
+      "q1": 2.0,
+      "q3": 4.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 235,
+      "median": 46.0,
+      "min": 18,
+      "q1": 33.0,
+      "q3": 64.25
+     },
+     "top_shapes": {
+      "ddddo|ckpt=0|cut=2": 5,
+      "dddoo|ckpt=0|cut=2": 2,
+      "ddo|ckpt=0|cut=0": 92,
+      "do|ckpt=0|cut=0": 90
+     }
+    },
+    "ignore_validation": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.25
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.25
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 10.44,
+      "median": 6.385,
+      "min": 5.07,
+      "q1": 6.065,
+      "q3": 7.12
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 52,
+      "median": 23.0,
+      "min": 14,
+      "q1": 15.0,
+      "q3": 26.0
+     },
+     "top_shapes": {
+      "dddo|ckpt=0|cut=4": 7,
+      "ddo|ckpt=0|cut=3": 14,
+      "do|ckpt=0|cut=2": 29,
+      "o|ckpt=0|cut=1": 150
+     }
+    },
+    "stale_checkpoint_noreapply": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 2,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 87.82,
+      "median": 56.03,
+      "min": 48.46,
+      "q1": 51.52,
+      "q3": 60.29
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 67,
+      "median": 50.0,
+      "min": 35,
+      "q1": 46.0,
+      "q3": 54.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 144,
+      "median": 93.5,
+      "min": 83,
+      "q1": 85.0,
+      "q3": 100.0
+     },
+     "top_shapes": {
+      "dd|ckpt=1|cut=0": 74,
+      "do|ckpt=1|cut=0": 85,
+      "oo|ckpt=1|cut=0": 41
+     }
+    },
+    "torn_commit_include": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 6.13,
+      "median": 5.655,
+      "min": 5.47,
+      "q1": 5.5575,
+      "q3": 5.69
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 15,
+      "median": 14.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 14.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=1": 118,
+      "o|ckpt=0|cut=1": 82
+     }
+    },
+    "truncate_suffix": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 17.96,
+      "median": 9.19,
+      "min": 3.37,
+      "q1": 4.125,
+      "q3": 12.5025
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 3,
+      "median": 3.0,
+      "min": 3,
+      "q1": 3.0,
+      "q3": 3.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 36,
+      "median": 17.0,
+      "min": 6,
+      "q1": 7.0,
+      "q3": 25.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 115,
+      "o|ckpt=0|cut=0": 85
+     }
+    }
+   }
+  },
+  "ycsb_w5_theta0.99": {
+   "config": {
+    "n": 48,
+    "per_fault_cap": 200,
+    "seeds": 40,
+    "theta": 0.99,
+    "workload": "ycsb",
+    "writes_per_txn": 5
+   },
+   "mismatch_runs_available": {
+    "flat_order": 1363,
+    "ignore_validation": 764,
+    "stale_checkpoint_noreapply": 720,
+    "torn_commit_include": 960,
+    "truncate_suffix": 1440
+   },
+   "per_fault": {
+    "all": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 1,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 165.5,
+      "median": 9.42,
+      "min": 3.37,
+      "q1": 5.72,
+      "q3": 34.762499999999996
+     },
+     "n_minimized": 1000,
+     "one_minimal": 1000,
+     "orig_diff_keys": {
+      "max": 89,
+      "median": 5.0,
+      "min": 1,
+      "q1": 5.0,
+      "q3": 5.25
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 1000,
+     "still_truly_buggy": 1000,
+     "tests": {
+      "max": 234,
+      "median": 25.0,
+      "min": 6,
+      "q1": 14.0,
+      "q3": 61.0
+     },
+     "top_shapes": {
+      "do|ckpt=1|cut=0": 91,
+      "d|ckpt=0|cut=0": 111,
+      "d|ckpt=0|cut=1": 105,
+      "o|ckpt=0|cut=1": 237
+     }
+    },
+    "flat_order": {
+     "min_diff_keys": {
+      "max": 3,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 3.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 3.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 165.5,
+      "median": 26.52,
+      "min": 8.88,
+      "q1": 18.3475,
+      "q3": 34.762499999999996
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 12,
+      "median": 4.0,
+      "min": 1,
+      "q1": 2.0,
+      "q3": 5.25
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 234,
+      "median": 47.5,
+      "min": 16,
+      "q1": 33.0,
+      "q3": 61.0
+     },
+     "top_shapes": {
+      "ddddo|ckpt=0|cut=2": 5,
+      "ddo|ckpt=0|cut=0": 80,
+      "dooo|ckpt=0|cut=2": 6,
+      "do|ckpt=0|cut=0": 86
+     }
+    },
+    "ignore_validation": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 10.73,
+      "median": 6.425,
+      "min": 5.07,
+      "q1": 6.005000000000001,
+      "q3": 7.08
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 51,
+      "median": 23.0,
+      "min": 14,
+      "q1": 15.0,
+      "q3": 26.0
+     },
+     "top_shapes": {
+      "dddo|ckpt=0|cut=4": 12,
+      "ddo|ckpt=0|cut=3": 7,
+      "do|ckpt=0|cut=2": 39,
+      "o|ckpt=0|cut=1": 142
+     }
+    },
+    "stale_checkpoint_noreapply": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 2,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 108.53,
+      "median": 64.85,
+      "min": 49.42,
+      "q1": 57.5625,
+      "q3": 75.51
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 89,
+      "median": 68.5,
+      "min": 48,
+      "q1": 61.0,
+      "q3": 75.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 171,
+      "median": 104.0,
+      "min": 83,
+      "q1": 93.75,
+      "q3": 121.25
+     },
+     "top_shapes": {
+      "dd|ckpt=1|cut=0": 59,
+      "do|ckpt=1|cut=0": 91,
+      "oo|ckpt=1|cut=0": 50
+     }
+    },
+    "torn_commit_include": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 5.8,
+      "median": 5.66,
+      "min": 5.44,
+      "q1": 5.577500000000001,
+      "q3": 5.7225
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 16,
+      "median": 14.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 14.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=1": 105,
+      "o|ckpt=0|cut=1": 95
+     }
+    },
+    "truncate_suffix": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 19.94,
+      "median": 9.350000000000001,
+      "min": 3.37,
+      "q1": 4.09,
+      "q3": 12.7425
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 5,
+      "median": 5.0,
+      "min": 5,
+      "q1": 5.0,
+      "q3": 5.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 41,
+      "median": 17.0,
+      "min": 6,
+      "q1": 7.0,
+      "q3": 25.25
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 111,
+      "o|ckpt=0|cut=0": 89
+     }
+    }
+   }
+  },
+  "ycsb_w8_theta0.99": {
+   "config": {
+    "n": 48,
+    "per_fault_cap": 200,
+    "seeds": 40,
+    "theta": 0.99,
+    "workload": "ycsb",
+    "writes_per_txn": 8
+   },
+   "mismatch_runs_available": {
+    "flat_order": 1363,
+    "ignore_validation": 708,
+    "stale_checkpoint_noreapply": 720,
+    "torn_commit_include": 960,
+    "truncate_suffix": 1440
+   },
+   "per_fault": {
+    "all": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 1,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 176.33,
+      "median": 9.445,
+      "min": 3.43,
+      "q1": 5.8,
+      "q3": 32.725
+     },
+     "n_minimized": 1000,
+     "one_minimal": 1000,
+     "orig_diff_keys": {
+      "max": 132,
+      "median": 8.0,
+      "min": 1,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 1000,
+     "still_truly_buggy": 1000,
+     "tests": {
+      "max": 250,
+      "median": 26.0,
+      "min": 6,
+      "q1": 15.0,
+      "q3": 58.25
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 101,
+      "d|ckpt=0|cut=1": 101,
+      "o|ckpt=0|cut=0": 99,
+      "o|ckpt=0|cut=1": 246
+     }
+    },
+    "flat_order": {
+     "min_diff_keys": {
+      "max": 5,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 7,
+      "median": 3.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 3.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 176.33,
+      "median": 23.42,
+      "min": 8.23,
+      "q1": 16.9875,
+      "q3": 32.725
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 19,
+      "median": 5.0,
+      "min": 1,
+      "q1": 3.75,
+      "q3": 8.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 250,
+      "median": 42.0,
+      "min": 15,
+      "q1": 30.0,
+      "q3": 58.25
+     },
+     "top_shapes": {
+      "ddddo|ckpt=0|cut=2": 3,
+      "ddo|ckpt=0|cut=0": 87,
+      "ddo|ckpt=0|cut=1": 3,
+      "do|ckpt=0|cut=0": 89
+     }
+    },
+    "ignore_validation": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_txns": {
+      "max": 4,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 10.4,
+      "median": 6.51,
+      "min": 5.05,
+      "q1": 6.135,
+      "q3": 7.2124999999999995
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 56,
+      "median": 23.5,
+      "min": 14,
+      "q1": 15.0,
+      "q3": 28.0
+     },
+     "top_shapes": {
+      "dddo|ckpt=0|cut=4": 5,
+      "ddo|ckpt=0|cut=3": 7,
+      "do|ckpt=0|cut=2": 41,
+      "o|ckpt=0|cut=1": 147
+     }
+    },
+    "stale_checkpoint_noreapply": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 2,
+      "median": 2.0,
+      "min": 2,
+      "q1": 2.0,
+      "q3": 2.0
+     },
+     "min_with_checkpoint": 200,
+     "ms": {
+      "max": 138.35,
+      "median": 78.29499999999999,
+      "min": 50.44,
+      "q1": 63.175,
+      "q3": 88.2225
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 132,
+      "median": 89.5,
+      "min": 56,
+      "q1": 78.0,
+      "q3": 101.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 209,
+      "median": 122.0,
+      "min": 83,
+      "q1": 99.0,
+      "q3": 138.25
+     },
+     "top_shapes": {
+      "dd|ckpt=1|cut=0": 63,
+      "do|ckpt=1|cut=0": 96,
+      "oo|ckpt=1|cut=0": 41
+     }
+    },
+    "torn_commit_include": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 5.89,
+      "median": 5.74,
+      "min": 5.5,
+      "q1": 5.6674999999999995,
+      "q3": 5.8
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 17,
+      "median": 14.0,
+      "min": 14,
+      "q1": 14.0,
+      "q3": 15.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=1": 101,
+      "o|ckpt=0|cut=1": 99
+     }
+    },
+    "truncate_suffix": {
+     "min_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "min_drop_last": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "q1": 0.0,
+      "q3": 0.0
+     },
+     "min_txns": {
+      "max": 1,
+      "median": 1.0,
+      "min": 1,
+      "q1": 1.0,
+      "q3": 1.0
+     },
+     "min_with_checkpoint": 0,
+     "ms": {
+      "max": 19.67,
+      "median": 9.445,
+      "min": 3.43,
+      "q1": 4.1775,
+      "q3": 13.504999999999999
+     },
+     "n_minimized": 200,
+     "one_minimal": 200,
+     "orig_diff_keys": {
+      "max": 8,
+      "median": 8.0,
+      "min": 8,
+      "q1": 8.0,
+      "q3": 8.0
+     },
+     "orig_txns": {
+      "max": 48,
+      "median": 48.0,
+      "min": 48,
+      "q1": 48.0,
+      "q3": 48.0
+     },
+     "still_mismatch": 200,
+     "still_truly_buggy": 200,
+     "tests": {
+      "max": 42,
+      "median": 17.0,
+      "min": 6,
+      "q1": 7.0,
+      "q3": 26.0
+     },
+     "top_shapes": {
+      "d|ckpt=0|cut=0": 101,
+      "o|ckpt=0|cut=0": 99
+     }
+    }
+   }
+  }
+ }
+}

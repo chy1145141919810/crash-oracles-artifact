@@ -1,0 +1,105 @@
+{
+  "by_operator": {
+    "binop": {
+      "wrong_state": 4
+    },
+    "bool": {
+      "wrong_state": 2
+    },
+    "cmp": {
+      "equivalent_on_test_set": 1,
+      "raises_only": 2,
+      "wrong_state": 2
+    },
+    "const": {
+      "equivalent_on_test_set": 1,
+      "raises_only": 2,
+      "wrong_state": 4
+    },
+    "del": {
+      "equivalent_on_test_set": 1,
+      "raises_only": 2,
+      "wrong_state": 4
+    },
+    "if": {
+      "equivalent_on_test_set": 2,
+      "raises_only": 3,
+      "wrong_state": 3
+    },
+    "key": {
+      "equivalent_on_test_set": 3,
+      "wrong_state": 3
+    },
+    "sorted": {
+      "wrong_state": 2
+    }
+  },
+  "mutant_level": {
+    "history_acceptor": {
+      "detected_at_least_once": 14,
+      "detected_on_every_wrong_scenario": 11,
+      "mutants_with_a_false_report": 0
+    },
+    "oracle": {
+      "detected_at_least_once": 24,
+      "detected_on_every_wrong_scenario": 24,
+      "mutants_with_a_false_report": 0
+    },
+    "single_log_replay": {
+      "detected_at_least_once": 23,
+      "detected_on_every_wrong_scenario": 12,
+      "mutants_with_a_false_report": 28
+    }
+  },
+  "mutants_generated": 41,
+  "mutants_with_wrong_state": 24,
+  "original_equals_truth": 2160,
+  "original_equals_v5_correct_recovery": 2160,
+  "pair_level": {
+    "history_acceptor": {
+      "abstained": 0,
+      "buggy_pairs": 41234,
+      "clean_pairs": 31126,
+      "detected": 23272,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 17962,
+      "recall": 0.5643886113401562
+    },
+    "oracle": {
+      "abstained": 0,
+      "buggy_pairs": 41234,
+      "clean_pairs": 31126,
+      "detected": 41234,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "single_log_replay": {
+      "abstained": 0,
+      "buggy_pairs": 41234,
+      "clean_pairs": 31126,
+      "detected": 37104,
+      "false_bug": 20286,
+      "false_bug_rate": 0.6517380967679753,
+      "missed": 4130,
+      "recall": 0.8998399379153126
+    }
+  },
+  "scenario_configs": [
+    "rmw_w1",
+    "rmw_w3",
+    "rmw_w8",
+    "ycsb_w1",
+    "ycsb_w3",
+    "ycsb_w8"
+  ],
+  "scenarios": 2160,
+  "status": {
+    "equivalent_on_test_set": 8,
+    "raises_only": 9,
+    "wrong_state": 24
+  },
+  "undetected_by_oracle": []
+}

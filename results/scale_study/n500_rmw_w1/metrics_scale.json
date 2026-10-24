@@ -1,0 +1,93 @@
+{
+  "checkers": {
+    "history_acceptor": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 1312,
+      "recall": 0.7381237524950099
+    },
+    "oracle": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "oracle_detorder_only": {
+      "abstain_buggy": 1.0,
+      "abstain_clean": 1.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.0
+    },
+    "single_log_replay": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 2834,
+      "false_bug_rate": 0.7807162534435261,
+      "missed": 1194,
+      "recall": 0.7616766467065869
+    }
+  },
+  "config": {
+    "keys_requested": 4000,
+    "n": 500,
+    "seeds": 40,
+    "theta": null,
+    "workload": "rmw",
+    "writes_per_txn": 1
+  },
+  "jobs": 22,
+  "n_buggy": 5010,
+  "n_clean": 3630,
+  "n_runs": 8640,
+  "per_fault": {
+    "clean": {
+      "history_acceptor": 0,
+      "n_buggy": 0,
+      "oracle": 0,
+      "single_log_replay": 0
+    },
+    "flat_order": {
+      "history_acceptor": 0,
+      "n_buggy": 1190,
+      "oracle": 1190,
+      "single_log_replay": 0
+    },
+    "ignore_validation": {
+      "history_acceptor": 700,
+      "n_buggy": 700,
+      "oracle": 700,
+      "single_log_replay": 700
+    },
+    "stale_checkpoint_noreapply": {
+      "history_acceptor": 720,
+      "n_buggy": 720,
+      "oracle": 720,
+      "single_log_replay": 720
+    },
+    "torn_commit_include": {
+      "history_acceptor": 960,
+      "n_buggy": 960,
+      "oracle": 960,
+      "single_log_replay": 960
+    },
+    "truncate_suffix": {
+      "history_acceptor": 1318,
+      "n_buggy": 1440,
+      "oracle": 1440,
+      "single_log_replay": 1436
+    }
+  },
+  "wall_s": 2.5,
+  "workload_stats": {
+    "engine_executions": 480,
+    "mean_committed": 499.85,
+    "mean_keys": 4000.0,
+    "occ_abort_rate": 0.0006043716213947059
+  }
+}

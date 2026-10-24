@@ -1,0 +1,97 @@
+{
+  "checkers": {
+    "history_acceptor": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 406,
+      "recall": 0.9025444071051368
+    },
+    "oracle": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "oracle_detorder_only": {
+      "abstain_buggy": 0.7162746039366299,
+      "abstain_clean": 0.7760393383996423,
+      "false_bug": 0,
+      "false_bug_rate": 0.0,
+      "missed": 0,
+      "recall": 0.28372539606337016
+    },
+    "single_log_replay": {
+      "abstain_buggy": 0.0,
+      "abstain_clean": 0.0,
+      "false_bug": 770,
+      "false_bug_rate": 0.17210549843540457,
+      "missed": 298,
+      "recall": 0.928468554968795
+    }
+  },
+  "config": {
+    "keys_requested": 400,
+    "n": 48,
+    "seeds": 40,
+    "theta": null,
+    "workload": "rmw",
+    "writes_per_txn": 1
+  },
+  "jobs": 22,
+  "n_buggy": 4166,
+  "n_clean": 4474,
+  "n_runs": 8640,
+  "per_fault": {
+    "clean": {
+      "history_acceptor": 0,
+      "n_buggy": 0,
+      "oracle": 0,
+      "single_log_replay": 0
+    },
+    "flat_order": {
+      "history_acceptor": 0,
+      "n_buggy": 290,
+      "oracle": 290,
+      "single_log_replay": 0
+    },
+    "ignore_validation": {
+      "history_acceptor": 756,
+      "n_buggy": 756,
+      "oracle": 756,
+      "single_log_replay": 756
+    },
+    "stale_checkpoint_noreapply": {
+      "history_acceptor": 720,
+      "n_buggy": 720,
+      "oracle": 720,
+      "single_log_replay": 720
+    },
+    "torn_commit_include": {
+      "history_acceptor": 960,
+      "n_buggy": 960,
+      "oracle": 960,
+      "single_log_replay": 960
+    },
+    "truncate_suffix": {
+      "history_acceptor": 1324,
+      "n_buggy": 1440,
+      "oracle": 1440,
+      "single_log_replay": 1432
+    }
+  },
+  "v4_equivalence": {
+    "checked": 17280,
+    "equal": 17280
+  },
+  "wall_s": 0.6,
+  "workload_stats": {
+    "engine_executions": 480,
+    "mean_committed": 47.9,
+    "mean_keys": 400.0,
+    "occ_abort_rate": 0.0042046250875963365
+  }
+}

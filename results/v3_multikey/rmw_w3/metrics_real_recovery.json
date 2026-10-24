@@ -1,0 +1,163 @@
+{
+  "checkers": {
+    "crash_no_crash_diff": {
+      "false_bug_rate_on_clean": 0.5082191780821917,
+      "n_buggy": 4990,
+      "n_clean": 3650,
+      "recall_on_buggy_recoveries": 1.0
+    },
+    "crash_no_crash_diff_legacy": {
+      "false_bug_rate_on_clean": 0.7723287671232877,
+      "n_buggy": 4990,
+      "n_clean": 3650,
+      "recall_on_buggy_recoveries": 1.0
+    },
+    "history_acceptor": {
+      "false_bug_rate_on_clean": 0.0,
+      "n_buggy": 4990,
+      "n_clean": 3650,
+      "recall_on_buggy_recoveries": 0.7835671342685371
+    },
+    "oracle": {
+      "false_bug_rate_on_clean": 0.0,
+      "n_buggy": 4990,
+      "n_clean": 3650,
+      "recall_on_buggy_recoveries": 1.0
+    },
+    "single_log_replay": {
+      "false_bug_rate_on_clean": 0.6742465753424658,
+      "n_buggy": 4990,
+      "n_clean": 3650,
+      "recall_on_buggy_recoveries": 0.7891783567134268
+    }
+  },
+  "config": {
+    "n": 48,
+    "seeds": 40,
+    "theta": null,
+    "workload": "rmw",
+    "writes_per_txn": 3
+  },
+  "contention": {
+    "engine_executions": 480,
+    "occ_abort_rate": 0.034994878798224605,
+    "skipped_fewer_than_12_committed": 0
+  },
+  "cross_mode_order_bug_slice": {
+    "crash_no_crash_diff_recall": 1.0,
+    "history_acceptor_recall": 0.0,
+    "n": 1052,
+    "oracle_recall": 1.0,
+    "single_log_replay_recall": 0.0
+  },
+  "datasets": {
+    "chinook_sqlite": 415,
+    "northwind_sqlite": 395
+  },
+  "degraded_adapter_clean": {
+    "n_clean": 3650,
+    "oracle_abstain_rate": 0.9906849315068493,
+    "oracle_false_bug_rate": 0.0
+  },
+  "degraded_adapter_missing_frontier": {
+    "n_buggy": 4990,
+    "oracle_abstain_rate": 0.9911823647294589,
+    "oracle_false_or_missed": 0.0,
+    "single_log_false_bug_rate_on_clean_degraded": 0.6742465753424658
+  },
+  "full_adapter_oracle_abstain": {
+    "on_buggy": 0.0,
+    "on_clean": 0.0
+  },
+  "n_degraded_adapter": 8640,
+  "n_full_adapter": 8640,
+  "n_runs": 17280,
+  "no_crash_clean_sanity": {
+    "fixed_match": 960,
+    "legacy_match": 440,
+    "n": 960
+  },
+  "operational_cost": {
+    "hardware": "single core, CPython; software prototype (no GPU)",
+    "oracle_check_time": {
+      "mean_us": 216.31,
+      "median_us": 322.42,
+      "n": 17280,
+      "p95_us": 447.0,
+      "total_s": 3.738
+    },
+    "recovery_time": {
+      "mean_us": 13.27,
+      "median_us": 9.79,
+      "n": 17280,
+      "p95_us": 35.89,
+      "total_s": 0.229
+    }
+  },
+  "oracle_minus_single_log_recall_gain": {
+    "ci95_high": 0.2204,
+    "ci95_low": 0.201,
+    "n_boot": 2000,
+    "n_clusters": 80,
+    "point": 0.2108,
+    "resampling_unit": "(domain, seed) cluster"
+  },
+  "per_domain_detection": {
+    "chinook_sqlite": {
+      "history_recall": 0.7786592621975407,
+      "n_buggy": 2521,
+      "oracle_recall": 1.0,
+      "single_log_recall": 0.7846092820309402
+    },
+    "northwind_sqlite": {
+      "history_recall": 0.7885783718104495,
+      "n_buggy": 2469,
+      "oracle_recall": 1.0,
+      "single_log_recall": 0.7938436614013771
+    }
+  },
+  "per_fault": {
+    "clean": {
+      "history_recall": null,
+      "n": 1440,
+      "n_buggy": 0,
+      "oracle_recall": null,
+      "single_log_recall": null
+    },
+    "flat_order": {
+      "history_recall": 0.0,
+      "n": 1440,
+      "n_buggy": 1052,
+      "oracle_recall": 1.0,
+      "single_log_recall": 0.0
+    },
+    "ignore_validation": {
+      "history_recall": 1.0,
+      "n": 1440,
+      "n_buggy": 818,
+      "oracle_recall": 1.0,
+      "single_log_recall": 1.0
+    },
+    "stale_checkpoint_noreapply": {
+      "history_recall": 1.0,
+      "n": 1440,
+      "n_buggy": 720,
+      "oracle_recall": 1.0,
+      "single_log_recall": 1.0
+    },
+    "torn_commit_include": {
+      "history_recall": 1.0,
+      "n": 1440,
+      "n_buggy": 960,
+      "oracle_recall": 1.0,
+      "single_log_recall": 1.0
+    },
+    "truncate_suffix": {
+      "history_recall": 0.9805555555555555,
+      "n": 1440,
+      "n_buggy": 1440,
+      "oracle_recall": 1.0,
+      "single_log_recall": 1.0
+    }
+  }
+}
