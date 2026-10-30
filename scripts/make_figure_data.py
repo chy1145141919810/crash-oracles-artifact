@@ -8,6 +8,8 @@ fig_scale.dat     oracle check time and correct-replay time (ms, mean of five se
                   against transactions per run; from scale_study/*/timing_scale.json
 fig_missing.dat   share of runs with a verdict (%) against the share of frontier fields that
                   are absent, one- and two-sided evidence; from v4_adapter_faults/summary.json
+fig_stale.dat     wrong verdicts among verdicts (%) against the share of frontier values made
+                  stale, one- and two-sided evidence; from v4_adapter_faults/summary.json
 """
 import json, sys
 from pathlib import Path
@@ -40,3 +42,16 @@ for pct, key in ((0, None), (10, "missing0.10"), (25, "missing0.25"), (50, "miss
 (out / "fig_missing.dat").write_text("\n".join(lines) + "\n")
 print(open(out / "fig_scale.dat").read())
 print(open(out / "fig_missing.dat").read())
+
+# fig_stale.dat: wrong verdicts among verdicts (%) against the share of frontier values made stale
+lines = ["stale " + " ".join("one_%s two_%s" % (c, c) for _, c in cfgs)]
+for pct, key in ((0, None), (5, "stale0.05"), (25, "stale0.25")):
+    row = []
+    for d, _ in cfgs:
+        st = s[d]["settings"]
+        one = st["L2" if key is None else "L2_" + key].get("wrong_among_verdicts", 0.0)
+        two = st["L3" if key is None else "L3_" + key].get("wrong_among_verdicts", 0.0)
+        row += ["%.2f" % (100 * one), "%.2f" % (100 * two)]
+    lines.append("%d %s" % (pct, " ".join(row)))
+(out / "fig_stale.dat").write_text("\n".join(lines) + "\n")
+print(open(out / "fig_stale.dat").read())

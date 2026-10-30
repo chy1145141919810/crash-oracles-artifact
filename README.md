@@ -10,7 +10,8 @@ Everything here is a Python prototype written for the paper. It is not a storage
 | --- | --- |
 | `scripts/` | All programs: the recovery prototype (v2-v5), workloads, checkers, the experiments built on them, the Elle export and scoring, and the figure-data generator. |
 | `results/` | The result files the paper's tables and figures are drawn from: metrics, summaries, and run-level CSV files where they are small. |
-| `NUMBERS_SOURCE_paper.md` | Map from each table, figure and quoted number in the paper to a result file. Paths there use the authors' internal layout: `experiments/rev_20261007/rerun_check/X` and `experiments/rev_20261010/rerun_check/X` both correspond to `results/X` here. |
+| `PAPER_MAP.md` | Map from each table, figure and section of the submitted paper to the result files it comes from. |
+| `NUMBERS_SOURCE_paper.md` | Older, finer-grained map kept for reference; its table numbers refer to an earlier draft. |
 | `ENGINE_ARTIFACT_INSPECTION.md` | Notes, with file and line references, on why the oracle could not be attached to the public HDCC and Aria artifacts. |
 
 ## Requirements
