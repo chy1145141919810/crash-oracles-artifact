@@ -112,7 +112,7 @@ Two edits were made for publication and do not affect any result: dataset locati
 ## Scope and limits
 
 - Both the engine and the checkers are Python models. The engine is single-threaded and logs commits in commit order. The in-memory crash model truncates a record list; the on-disk model kills a real process at eight fixed injection points and reads real files, but it is a process-kill model and does not lose unsynced data.
-- Wherever the oracle scores recall 1.000 and false-bug rate 0.000, the order metadata was exact. Those results show that the reference construction and its implementation are right when the evidence is complete and correct. `results/v4_adapter_faults/` shows what happens when it is not.
+- Wherever the oracle scores recall 1.000 and false-bug rate 0.000 (100.0 and 0 in the paper, which prints rates as percentages), the order metadata was exact. Those results show that the reference construction and its implementation are right when the evidence is complete and correct. `results/v4_adapter_faults/` shows what happens when it is not.
 - "YCSB-A-style" and "TPC-C-style" follow the operation mix and structure of those benchmarks at small scale. They are not YCSB or TPC-C results.
 - The recovery faults are five hand-written variants and 41 syntactic mutants of a 25-line recovery procedure. No field bugs were found or sought.
 - No third-party engine is evaluated; see `ENGINE_ARTIFACT_INSPECTION.md`.
