@@ -17,6 +17,6 @@ Numbering follows the submitted version of the paper (PVLDB Vol. 20 submission 2
 
 Figure data files are produced by `scripts/make_figure_data.py results OUT_DIR` (`fig_missing.dat` and `fig_stale.dat` for Figure 2, `fig_scale.dat` for Figure 3).
 
-Table 2 aggregates per-configuration results: its Runs, Buggy and "Missed by both baselines" columns are sums over the rows of the files above, and its recall and false-bug ranges are minima and maxima over the same rows.
+Table 2 aggregates per-configuration results: its Runs, Buggy and "Missed by both baselines" columns are sums over the rows of the files above. "Missed by both baselines" (called "Oracle only" in earlier drafts) counts buggy runs that the oracle detects and neither baseline detects; it is computed from the run-level CSV files. The fields `oracle_only_vs_single_log` and `oracle_only_vs_history` in `v3_multikey/grid_extra.json` are the pairwise counts against each baseline alone (Section 5.2 text), and its recall and false-bug ranges are minima and maxima over the same rows.
 
 The result files store rates as proportions (for example `0.732`); Tables 2, 3 and 5 of the paper print the same values as percentages (`73.2`).
